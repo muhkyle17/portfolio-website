@@ -7,7 +7,7 @@ import Social from '../Social'
 const Header = () => {
   return (
     <div className='mt-8 flex justify-between items-center'>
-      <a href='#' className='text-2xl'>
+      <a href='#' className='text-5xl name'>
         Mikyle Reyes
       </a>
       <Nav />
