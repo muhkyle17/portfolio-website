@@ -9,6 +9,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: Poppins;
+  background-color: #050402;
+  color: white;
 }
 
 a {
@@ -19,3 +21,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Apply styles using tailwind css */
+/* @layer base {
+  body {
+    @apply bg-red-200;
+  }
+} */
