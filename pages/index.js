@@ -13,7 +13,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <div className='w-full px-24 container mx-auto'>
+      <div className='relative'>
         <Header />
       </div>
     </div>
