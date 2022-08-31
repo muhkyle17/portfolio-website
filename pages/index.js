@@ -4,6 +4,7 @@ import Image from 'next/image'
 // Import components
 import Header from '../components/common/Header'
 import Hero from '../components/Hero'
+import About from '../components/About'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <div className='relative'>
         <Header />
         <Hero />
+        <About />
       </div>
     </div>
   )

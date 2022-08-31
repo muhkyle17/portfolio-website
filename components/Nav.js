@@ -13,7 +13,7 @@ const Nav = () => {
         {navigation.map((item, index) => {
           return (
             <li
-              className='text-white hover:text-[#FFA112] cursor-pointer'
+              className='text-white hover:text-primary cursor-pointer'
               key={index}
             >
               <Link

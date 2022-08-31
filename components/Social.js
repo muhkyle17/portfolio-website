@@ -9,7 +9,7 @@ const Social = () => {
       {social.map((item, index) => {
         return (
           <li
-            className='flex justify-center items-center text-[#FFA112] ml-[3rem]'
+            className='flex justify-center items-center text-primary ml-[3rem]'
             key={index}
           >
             <a
