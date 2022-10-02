@@ -15,7 +15,7 @@ const Skills = () => {
         {skills.map((item, index) => {
           return (
             <li key={index}>
-              <Image src={item.image} alt={item.alt} width='96' height='96' />
+              <Image src={item.image} alt={item.alt} width='86' height='86' />
             </li>
           )
         })}
