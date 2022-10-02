@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className='w-full'>
           <h2 className='text-4xl'>Mikyle Reyes</h2>
-          <p className='mt-4 mb-8 text-primary'>Frontend Web Developer</p>
+          <p className='mt-4 mb-8 text-primary'>Fullstack Developer</p>
           <hr className='mb-8 border-[0.3px] border-white border-opacity-30 rounded-full' />
           <p className='text-gray-400 mb-8'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit tempore
