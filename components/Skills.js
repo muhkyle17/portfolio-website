@@ -6,7 +6,7 @@ import Image from 'next/image'
 import apolloclient from '../public/skills/apolloclient.png'
 import { skills } from '../data'
 
-skills.map((image, index) => console.log(image.image))
+skills.map((item, index) => console.log(item.alt))
 
 const Skills = () => {
   return (
@@ -15,7 +15,7 @@ const Skills = () => {
         {skills.map((item, index) => {
           return (
             <li key={index}>
-              <Image src={item.image} alt='Skills' width='96' height='96' />
+              <Image src={item.image} alt={item.alt} width='96' height='96' />
             </li>
           )
         })}

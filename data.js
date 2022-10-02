@@ -67,26 +67,34 @@ export const social = [
 export const skills = [
   {
     image: HtmlSkill,
+    alt: 'HTML Skill',
   },
   {
     image: CssSkill,
+    alt: 'CSS Skill',
   },
   {
     image: JsSkill,
+    alt: 'JavaScript Skill',
   },
   {
     image: Reactjs,
+    alt: 'Reactjs Skill',
   },
   {
     image: Nextjs,
+    alt: 'Nextjs Skill',
   },
   {
     image: GitSkill,
+    alt: 'Git Skill',
   },
   {
     image: RailsSkill,
+    alt: 'Ruby on Rails Skill',
   },
   {
     image: TailwindSkill,
+    alt: 'TailwindCSS Skill',
   },
 ]
