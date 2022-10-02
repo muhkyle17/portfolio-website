@@ -3,10 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 // Import internal
-import apolloclient from '../public/skills/apolloclient.png'
 import { skills } from '../data'
-
-skills.map((item, index) => console.log(item.alt))
 
 const Skills = () => {
   return (

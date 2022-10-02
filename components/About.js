@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 // Import picture of me
-import PictureWithBg from '../public/Mikyle_pic_bg.jpg'
+import PictureWithBg from '../public/Mikyle_pic.jpg'
 
 const About = () => {
   return (
