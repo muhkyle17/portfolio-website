@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 // Import picture of me
-import PictureWithBg from '../public/Mikyle_pic.jpg'
+import PictureWithBg from '../public/Mikyle_pic.jpeg'
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
             src={PictureWithBg}
             alt='Picture of me with background'
             width={350}
-            height={450}
+            height={470}
             className='rounded-xl'
           />
         </div>
