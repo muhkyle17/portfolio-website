@@ -22,7 +22,7 @@ import Nextjs from './public/skills/nextjs.png'
 import GitSkill from './public/skills/git.png'
 import RailsSkill from './public/skills/rails.png'
 import TailwindSkill from './public/skills/tailwindcss.png'
-import ApolloSkill from './public/skills/apolloclient.png'
+// import ApolloSkill from './public/skills/apolloclient.png'
 
 export const navigation = [
   {
@@ -88,8 +88,5 @@ export const skills = [
   },
   {
     image: TailwindSkill,
-  },
-  {
-    image: ApolloSkill,
   },
 ]

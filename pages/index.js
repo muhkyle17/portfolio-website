@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Header from '../components/common/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import Skills from '../components/Skills'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Header />
         <Hero />
         <About />
+        <Skills />
       </div>
     </div>
   )
