@@ -1,40 +1,33 @@
+// Import externals
 import React from 'react'
-
 import Image from 'next/image'
 
-import imagePlaceholder from '../public/brewlab.png'
+// Import internals
+import imagePlaceholder from '../public/projects/brewlab.png'
 
-const Project = ({
-  name,
-  picture,
-  skills,
-  description,
-  live,
-  source,
-  bgColor,
-}) => {
+const Project = ({ title, image, skills, description, live, source }) => {
+  console.log(skills)
   return (
     <div
       className={`flex flex-col items-center justify-center gap-3 w-[18rem]`}
     >
-      <p className='text-xl'>Name</p>
+      <p className='text-2xl font-semibold'>{title}</p>
       <Image
-        src={imagePlaceholder}
+        src={image}
         alt='Brew Lab Project'
-        width='360'
-        height='200'
+        width='380'
+        height='190'
         className='rounded-lg'
       />
-      <p>Skills</p>
-      <p className='text-center'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-        nesciunt libero ipsa maiores nemo dolor, aliquid ducimus distinctio
-        reprehenderit quibusdam alksjdf ;alsfei sjfioe jaejfuiw isuf
-        uehfouuosefjw owefjiosej fsj oejfs iosfeooisjf !
-      </p>
       <div className='flex'>
-        <p>Live</p>
-        <p>Source</p>
+        {skills.map((item, index) => {
+          return <p key={index}>{item}</p>
+        })}
+      </div>
+      <p className='text-center'>{description}</p>
+      <div className='flex'>
+        <a href={live}>Live</a>
+        <a href={source}>Source</a>
       </div>
     </div>
   )

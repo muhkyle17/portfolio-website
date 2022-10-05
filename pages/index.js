@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-// Import components
+// Import internals
 import Header from '../components/common/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'

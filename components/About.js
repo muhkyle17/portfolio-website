@@ -1,7 +1,8 @@
+// Import externals
 import React from 'react'
 import Image from 'next/image'
 
-// Import picture of me
+// Import internals
 import PictureWithBg from '../public/Mikyle_pic_normal.jpeg'
 
 const About = () => {

@@ -1,6 +1,7 @@
+// Import externals
 import React, { useState, useEffect } from 'react'
 
-// Import components
+// Import internals
 import Nav from '../Nav'
 import Social from '../Social'
 import NavMobile from '../NavMobile'

@@ -1,4 +1,7 @@
+// Import externals
 import React from 'react'
+
+// Import internals
 import Projects from './Projects'
 
 const Portfolio = () => {

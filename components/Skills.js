@@ -1,8 +1,8 @@
-// Import external
+// Import externals
 import React from 'react'
 import Image from 'next/image'
 
-// Import internal
+// Import internals
 import { skills } from '../data'
 
 const Skills = () => {

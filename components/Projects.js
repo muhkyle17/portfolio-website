@@ -1,14 +1,26 @@
+// Import externals
 import React from 'react'
+
+// Import internals
 import Project from './Project'
+import { projects } from '../data'
 
 const Projects = () => {
   return (
     <div className='container mx-auto px-28 gap-12 flex flex-wrap justify-center items-center'>
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+      {projects.map((item, index) => {
+        return (
+          <Project
+            key={index}
+            title={item.title}
+            image={item.image}
+            description={item.description}
+            skills={item.skills}
+            live={item.live}
+            source={item.source}
+          />
+        )
+      })}
     </div>
   )
 }
