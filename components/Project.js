@@ -15,15 +15,22 @@ const Project = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-center justify-center gap-3 w-[18rem] ${bgColor}//`}
+      className={`flex flex-col items-center justify-center gap-3 w-[18rem]`}
     >
-      <p>Name</p>
-      <Image src={imagePlaceholder} alt='Brew Lab Project' />
+      <p className='text-xl'>Name</p>
+      <Image
+        src={imagePlaceholder}
+        alt='Brew Lab Project'
+        width='360'
+        height='200'
+        className='rounded-lg'
+      />
       <p>Skills</p>
       <p className='text-center'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
         nesciunt libero ipsa maiores nemo dolor, aliquid ducimus distinctio
-        reprehenderit quibusdam!
+        reprehenderit quibusdam alksjdf ;alsfei sjfioe jaejfuiw isuf
+        uehfouuosefjw owefjiosej fsj oejfs iosfeooisjf !
       </p>
       <div className='flex'>
         <p>Live</p>
