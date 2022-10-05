@@ -19,9 +19,16 @@ const Project = ({ title, image, skills, description, live, source }) => {
         height='190'
         className='rounded-lg'
       />
-      <div className='flex'>
+      <div className='flex gap-3'>
         {skills.map((item, index) => {
-          return <p key={index}>{item}</p>
+          return (
+            <p
+              key={index}
+              className='bg-primary rounded-full py-[0.4rem] px-2 text-sm'
+            >
+              {item}
+            </p>
+          )
         })}
       </div>
       <p className='text-center'>{description}</p>
