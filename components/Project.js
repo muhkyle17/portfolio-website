@@ -25,9 +25,19 @@ const Project = ({ title, image, skills, description, live, source }) => {
         })}
       </div>
       <p className='text-center'>{description}</p>
-      <div className='flex'>
-        <a href={live}>Live</a>
-        <a href={source}>Source</a>
+      <div className='flex gap-5'>
+        <a
+          href={live}
+          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7'
+        >
+          Live
+        </a>
+        <a
+          href={source}
+          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7'
+        >
+          Source
+        </a>
       </div>
     </div>
   )
