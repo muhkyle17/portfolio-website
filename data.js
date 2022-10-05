@@ -137,6 +137,15 @@ export const projects = [
     source: 'https://github.com/muhkyle17/natours-project',
   },
   {
+    title: 'Omnifood',
+    image: Omnifood,
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nesciunt libero ipsa maiores nemo dolor, aliquid ducimus distinctio reprehenderit quibusdam alksjdf alsfei sjfioe jaejfuiw isuf uehfouuosefjw owefjiosej fsj oejfs iosfeooisjf! ',
+    skills: ['HTML', 'CSS'],
+    live: 'https://muhkyle17.github.io/ominfood-project/',
+    source: 'https://github.com/muhkyle17/ominfood-project',
+  },
+  {
     title: 'Tic Tac Toe',
     image: TicTacToe,
     description:
