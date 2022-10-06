@@ -12,7 +12,7 @@ const Hero = () => {
       id='home'
       className='lg:h-[85vh]// lg:h-[100vh] flex items-center lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'
     >
-      <div className='container mx-auto h-full px-7'>
+      <div className='container mx-auto h-full'>
         <div className='flex items-center h-full pt-8'>
           <div className='flex-1 flex flex-col items-center lg:items-start'>
             <p className='text-lg text-primary text-md mb-[22px]'>
