@@ -7,7 +7,7 @@ import imagePlaceholder from '../public/projects/brewlab.png'
 
 const Project = ({ title, image, skills, description, live, source }) => {
   return (
-    <div className='flex flex-col items-center justify-center gap-4 w-[22rem]'>
+    <div className='flex flex-col items-center justify-center gap-3 w-[22rem]'>
       <p className='text-2xl font-semibold'>{title}</p>
       <Image
         src={image}
