@@ -1,10 +1,16 @@
-import React from 'react'
+// Import externals
+import { FiHeart } from 'react-icons/fi'
 
 const Footer = () => {
   return (
-    <div>
-      <p>Footer</p>
-    </div>
+    <section id='footer' className='h-28 bg-secondary'>
+      <div className='flex flex-col h-full items-center justify-center'>
+        <p className='flex items-center text-base'>
+          Coded with <FiHeart className='mx-2' /> by Mikyle Reyes.
+        </p>
+        <p className='text-base'>Designed by Cristian Mihai.</p>
+      </div>
+    </section>
   )
 }
 
