@@ -32,13 +32,13 @@ const Project = ({ title, image, skills, description, live, source }) => {
       <div className='flex gap-5'>
         <a
           href={live}
-          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7'
+          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-xl py-[0.4rem] px-7'
         >
           Live
         </a>
         <a
           href={source}
-          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7'
+          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-xl py-[0.4rem] px-7'
         >
           Source
         </a>
