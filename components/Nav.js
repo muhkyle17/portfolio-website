@@ -12,10 +12,7 @@ const Nav = () => {
       <ul className='flex gap-8 text-sm capitalize'>
         {navigation.map((item, index) => {
           return (
-            <li
-              className='text-white hover:text-primary cursor-pointer'
-              key={index}
-            >
+            <li className='text-white' key={index}>
               <Link
                 to={item.href}
                 activeClass='active'
@@ -23,9 +20,8 @@ const Nav = () => {
                 smooth={true}
                 duration={500}
                 offset={-70}
-                className='transition-all duration-300'
+                className='border-t// border-b border-transparent hover:border-primary hover:text-primary cursor-pointer transition-all duration-300 py-[3px]'
               >
-                {/* {`${item.name[0].toUpperCase()}${item.name.substring(1)}`} */}
                 {item.name}
               </Link>
             </li>

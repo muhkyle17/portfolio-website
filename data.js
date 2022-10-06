@@ -45,18 +45,18 @@ export const navigation = [
     name: 'portfolio',
     href: 'portfolio',
   },
-  {
-    name: 'services',
-    href: 'services',
-  },
-  {
-    name: 'testimonials',
-    href: 'testimonials',
-  },
-  {
-    name: 'contact',
-    href: 'contact',
-  },
+  // {
+  //   name: 'services',
+  //   href: 'services',
+  // },
+  // {
+  //   name: 'testimonials',
+  //   href: 'testimonials',
+  // },
+  // {
+  //   name: 'contact',
+  //   href: 'contact',
+  // },
 ]
 
 // social
