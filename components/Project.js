@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 
 // Import internals
-import imagePlaceholder from '../public/projects/brewlab.png'
 
 const Project = ({ title, image, skills, description, live, source }) => {
   return (
