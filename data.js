@@ -1,7 +1,7 @@
 // Icons
 import {
   // FiYoutube,
-  // FiInstagram,
+  FiInstagram,
   FiTwitter,
   FiGithub,
   // FiDribbble,
@@ -68,6 +68,10 @@ export const social = [
   {
     icon: <FiGithub />,
     href: 'https://github.com/muhkyle17',
+  },
+  {
+    icon: <FiInstagram />,
+    href: 'https://www.instagram.com/muhkyle/',
   },
 ]
 
