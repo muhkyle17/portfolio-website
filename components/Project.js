@@ -13,7 +13,7 @@ const Project = ({ title, image, skills, description, live, source }) => {
         alt='Brew Lab Project'
         width='380'
         height='200'
-        layout='fixed'
+        layout='intrinsic'
         className='rounded-lg'
       />
       <div className='flex gap-3'>

@@ -13,7 +13,13 @@ const Skills = () => {
           {skills.map((item, index) => {
             return (
               <li key={index}>
-                <Image src={item.image} alt={item.alt} width='86' height='86' />
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  width='86'
+                  height='86'
+                  layout='intrinsic'
+                />
               </li>
             )
           })}

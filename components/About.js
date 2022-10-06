@@ -3,18 +3,19 @@ import React from 'react'
 import Image from 'next/image'
 
 // Import internals
-import PictureWithBg from '../public/Mikyle_pic_normal.jpeg'
+import PictureOfMe from '../public/CON_1265.jpg'
 
 const About = () => {
   return (
-    <section id='about' className='py-12 lg:py-28 bg-secondary'>
-      <div className='container mx-auto h-full px-28 flex justify-around w-full'>
+    <section id='about' className='py-12 lg:py-16 bg-secondary'>
+      <div className='container mx-auto flex h-full px-28// gap-10'>
         <div className='flex items-center justify-center w-full'>
           <Image
-            src={PictureWithBg}
+            src={PictureOfMe}
             alt='Picture of me with background'
-            width={450}
-            height={580}
+            width={610}
+            height={400}
+            layout='intrinsic'
             className='rounded-xl'
           />
         </div>
