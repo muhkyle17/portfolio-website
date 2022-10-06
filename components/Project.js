@@ -7,14 +7,14 @@ import imagePlaceholder from '../public/projects/brewlab.png'
 
 const Project = ({ title, image, skills, description, live, source }) => {
   return (
-    <div className='flex flex-col items-center justify-center gap-3 w-[22rem]'>
+    <div className='flex flex-col items-center justify-center gap-4 w-[22rem]'>
       <p className='text-2xl font-semibold'>{title}</p>
       <Image
         src={image}
         alt='Brew Lab Project'
         width='380'
-        height='190'
-        layout='intrinsic'
+        height='200'
+        layout='fixed'
         className='rounded-lg'
       />
       <div className='flex gap-3'>
@@ -29,7 +29,7 @@ const Project = ({ title, image, skills, description, live, source }) => {
           )
         })}
       </div>
-      <p className='text-center'>{description}</p>
+      <p className='text-center mt-2'>{description}</p>
       <div className='flex gap-5'>
         <a
           href={live}
