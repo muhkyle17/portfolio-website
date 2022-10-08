@@ -38,7 +38,7 @@ function Modal() {
   )
 }
 
-const About = ({ setHideHeader }) => {
+const About = () => {
   const [showModal, setShowModal] = useState(false)
 
   return (
@@ -68,7 +68,6 @@ const About = ({ setHideHeader }) => {
           </div>
         </div>
       </section>
-      {showModal && setHideHeader(true)}
       {showModal && <Modal />}
     </>
   )

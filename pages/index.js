@@ -10,8 +10,6 @@ import Portfolio from '../components/Portfolio'
 import Footer from '../components/Footer'
 
 export default function Home() {
-  const [hideHeader, setHideHeader] = useState(false)
-
   return (
     <div>
       <Head>
@@ -21,9 +19,9 @@ export default function Home() {
       </Head>
 
       <div className='relative'>
-        {hideHeader ? <Header hidden={'hidden'} /> : <Header />}
+        <Header />
         <Hero />
-        <About setHideHeader={setHideHeader} />
+        <About />
         <Skills />
         <Portfolio />
         <Footer />
