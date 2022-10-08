@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState } from 'react'
 
 // Import internals
 import Header from '../components/common/Header'
@@ -9,6 +10,8 @@ import Portfolio from '../components/Portfolio'
 import Footer from '../components/Footer'
 
 export default function Home() {
+  const [hideHeader, setHideHeader] = useState(false)
+
   return (
     <div>
       <Head>
@@ -18,9 +21,9 @@ export default function Home() {
       </Head>
 
       <div className='relative'>
-        <Header />
+        {hideHeader ? <Header hidden={'hidden'} /> : <Header />}
         <Hero />
-        <About />
+        <About setHideHeader={setHideHeader} />
         <Skills />
         <Portfolio />
         <Footer />

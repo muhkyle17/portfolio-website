@@ -6,7 +6,7 @@ import Nav from '../Nav'
 import Social from '../Social'
 import NavMobile from '../NavMobile'
 
-const Header = () => {
+const Header = ({ hidden }) => {
   const [bg, setBg] = useState(false)
 
   useEffect(() => {
@@ -17,9 +17,9 @@ const Header = () => {
 
   return (
     <header
-      className={`${
-        bg ? 'bg-tertiary h-20' : 'h-24'
-      } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300 px-10 md:px-7 lg:px-0`}
+      className={`${bg ? 'bg-tertiary h-20' : 'h-24'} ${
+        hidden ? 'hidden' : 'flex'
+      } items-center fixed top-0 w-full text-white z-10 transition-all duration-300 px-10 md:px-7 lg:px-0`}
     >
       <div className='container mx-auto h-full flex justify-between items-center'>
         <a
