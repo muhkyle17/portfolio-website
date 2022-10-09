@@ -44,8 +44,8 @@ function Modal({ setShowModal }) {
                 className='rounded-xl'
               />
             </div>
-            <div className='flex flex-col gap-6 xl:gap-0 justify-between max-w-[50%]'>
-              <h2 className='text-center text-4xl sm:text-5xl'>About Me</h2>
+            <div className='flex flex-col gap-6 xl:gap-0 justify-between max-w-[50%] text-base'>
+              <h2 className='text-center text-3xl sm:text-4xl'>About Me</h2>
               <p>
                 Hi! I&lsquo;m Mikyle and I&lsquo;m a Fullstack Developer and
                 investor from the Philippines, currently living and working in
@@ -60,6 +60,11 @@ function Modal({ setShowModal }) {
                 creative learning. What started out as a hobby turned quickly
                 into a passion of work and lifelong learning. In coding, I found
                 a perfect mix of designing, creating, and problem-solving.
+              </p>
+              <p>
+                When I&lsquo;m not coding, I&lsquo;m reading, working out,
+                hiking, cooking, playing football, scuba diving or going on
+                outdoor adventures.
               </p>
               <p className='pb-10 xl:pb-0'>
                 My current tech stack includes JavaScript, React.js, Next.js,
@@ -93,9 +98,12 @@ const About = () => {
           </div>
           <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0'>
             <h1 className='text-4xl font-bold'>Mikyle Reyes</h1>
-            <p className='text-primary'>Fullstack Developer</p>
+            <p className='text-primary text-xl'>Fullstack Developer</p>
             <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
-            <p></p>
+            <p className='text-lg'>
+              I&lsquo;m a Fullstack Developer with a great passion for creating
+              beautiful applications and websites.
+            </p>
             <button
               className='py-4 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
               onClick={() => setShowModal(true)}
