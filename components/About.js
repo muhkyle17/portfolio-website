@@ -96,13 +96,20 @@ const About = () => {
               className='rounded-xl'
             />
           </div>
-          <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0'>
-            <h1 className='text-4xl font-bold'>Mikyle Reyes</h1>
-            <p className='text-primary text-xl'>Fullstack Developer</p>
+          <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0 text-lg'>
+            <h1 className='text-4xl font-bold'>About Me</h1>
+            <p className='text-primary text-2xl'>
+              Hello. I&lsquo;m a Fullstack Developer.
+            </p>
             <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
-            <p className='text-lg'>
-              I&lsquo;m a Fullstack Developer with a great passion for creating
-              beautiful applications and websites.
+            <p>
+              My name&lsquo;s Mikyle Reyes, a Fullstack Developer with a great
+              passion for creating beautiful applications and websites.
+            </p>
+            <p>
+              Although I specialize in crafting user interfaces using modern web
+              technologies, I&lsquo;m also learning different backend
+              technologies to become a better developer.
             </p>
             <button
               className='py-4 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
