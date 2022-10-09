@@ -44,7 +44,7 @@ function Modal({ setShowModal }) {
                 className='rounded-xl'
               />
             </div>
-            <div className='flex flex-col gap-6 xl:gap-0 justify-between max-w-[50%] text-base'>
+            <div className='flex flex-col gap-6 xl:gap-1 justify-between max-w-[50%] text-base'>
               <h2 className='text-center text-3xl sm:text-4xl'>About Me</h2>
               <p>
                 Hi! I&lsquo;m Mikyle and I&lsquo;m a Fullstack Developer and
@@ -64,7 +64,7 @@ function Modal({ setShowModal }) {
               <p>
                 When I&lsquo;m not coding, I&lsquo;m reading, working out,
                 hiking, cooking, playing football, scuba diving or going on
-                outdoor adventures.
+                outdoor adventures. Life is and always will be an adventure!
               </p>
               <p className='pb-10 xl:pb-0'>
                 My current tech stack includes JavaScript, React.js, Next.js,
