@@ -99,7 +99,7 @@ const About = () => {
           <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0 text-lg'>
             <h1 className='text-4xl font-bold'>About Me</h1>
             <p className='text-primary text-2xl'>
-              Hello. I&lsquo;m a Fullstack Developer.
+              Hello! I&lsquo;m a Fullstack Developer!
             </p>
             <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
             <p>
