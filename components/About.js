@@ -1,16 +1,21 @@
 // Import externals
 import { useState } from 'react'
 import Image from 'next/image'
+import { FiX } from 'react-icons/fi'
 
 // Import internals
 import PictureOfMe from '../public/CON_1265.jpg'
 import PictureOfMe2 from '../public/Mikyle_pic_normal.jpeg'
 
-function Modal() {
+function Modal({ setShowModal }) {
   return (
     <div className='h-screen fixed bottom-0 left-0 z-50'>
       <div className='h-screen flex justify-center items-center bg-[#000000a9]'>
-        <div className='w-[80%] max-h-[40rem] text-center xl:text-left bg-gray-800 rounded-lg py-10 sm:px-20 overflow-auto'>
+        <div className='w-[80%] max-h-[40rem] text-center xl:text-left bg-gray-800 rounded-lg py-10 sm:px-20 overflow-auto relative'>
+          <FiX
+            className='absolute top-4 right-5 text-2xl cursor-pointer'
+            onClick={() => setShowModal(false)}
+          />
           <div className='flex justify-center flex-wrap xl:flex-nowrap gap-8 h-[30rem]'>
             <div className='self-center w-[50%] xl:max-w-[23rem]'>
               <Image
@@ -80,7 +85,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      {showModal && <Modal />}
+      {showModal && <Modal setShowModal={setShowModal} />}
     </>
   )
 }
