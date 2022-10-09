@@ -7,7 +7,7 @@ import { projects } from '../data'
 
 const Projects = () => {
   return (
-    <div className='gap-12 lg:justify-between flex flex-wrap justify-center items-center'>
+    <div className='gap-12 lg:justify-between flex flex-wrap justify-center items-baseline'>
       {projects.map((item, index) => {
         return (
           <Project
