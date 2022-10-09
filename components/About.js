@@ -10,9 +10,9 @@ function Modal() {
   return (
     <div className='h-screen fixed bottom-0 left-0 z-50'>
       <div className='h-screen flex justify-center items-center bg-[#000000a9]'>
-        <div className='max-w-[80%] max-h-[90%] text-center sm:text-left bg-gray-800 rounded-lg py-7 sm:px-20 overflow-auto'>
-          <div className='flex justify-center flex-wrap xl:flex-nowrap gap-8 h-[85%]'>
-            <div className='self-center w-[60%] xl:max-w-[40%]'>
+        <div className='w-[80%] max-h-[40rem] text-center xl:text-left bg-gray-800 rounded-lg py-10 sm:px-20 overflow-auto'>
+          <div className='flex justify-center flex-wrap xl:flex-nowrap gap-8 h-[30rem]'>
+            <div className='self-center w-[50%] xl:max-w-[23rem]'>
               <Image
                 src={PictureOfMe2}
                 alt='Picture of me in Modal'
@@ -20,7 +20,7 @@ function Modal() {
                 className='rounded-xl'
               />
             </div>
-            <div className='flex flex-col gap-6 xl:gap-0 justify-between max-w-[60%]'>
+            <div className='flex flex-col gap-6 xl:gap-0 justify-between max-w-[50%]'>
               <h2 className='text-center text-4xl sm:text-5xl'>About Me</h2>
               <p>
                 Hi! I&lsquo;m Mikyle and I&lsquo;m a Fullstack Developer and
@@ -37,7 +37,7 @@ function Modal() {
                 into a passion of work and lifelong learning. In coding, I found
                 a perfect mix of designing, creating, and problem-solving.
               </p>
-              <p>
+              <p className='pb-10 xl:pb-0'>
                 My current tech stack includes JavaScript, React.js, Next.js,
                 TailwindCSS, and Ruby on Rails. I am currently in the process of
                 learning Python and Node.js.
