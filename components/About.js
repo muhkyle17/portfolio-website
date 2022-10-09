@@ -1,5 +1,5 @@
 // Import externals
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { FiX } from 'react-icons/fi'
 
@@ -8,6 +8,19 @@ import PictureOfMe from '../public/CON_1265.jpg'
 import PictureOfMe2 from '../public/Mikyle_pic_normal.jpeg'
 
 function Modal({ setShowModal }) {
+  const closeOnEscapeKeyDown = (e) => {
+    if ((e.charCode || e.keyCode) === 27) {
+      setShowModal(false)
+    }
+  }
+
+  useEffect(() => {
+    document.body.addEventListener('keydown', closeOnEscapeKeyDown)
+    return function cleanup() {
+      document.body.removeEventListener('keydown', closeOnEscapeKeyDown)
+    }
+  })
+
   return (
     <div className='h-screen fixed bottom-0 left-0 z-50'>
       <div
@@ -82,6 +95,7 @@ const About = () => {
             <h1 className='text-4xl font-bold'>Mikyle Reyes</h1>
             <p className='text-primary'>Fullstack Developer</p>
             <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
+            <p></p>
             <button
               className='py-4 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
               onClick={() => setShowModal(true)}
