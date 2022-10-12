@@ -109,12 +109,24 @@ const About = () => {
               technologies, I&lsquo;m also learning different backend
               technologies to become a better developer.
             </p>
-            <button
-              className='py-4 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
-              onClick={() => setShowModal(true)}
-            >
-              Learn more
-            </button>
+            <div className='flex gap-4'>
+              <button
+                className='py-3 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
+                onClick={() => setShowModal(true)}
+              >
+                Learn more
+              </button>
+              <a
+                download
+                href='/public/Mikyle-Resume.pdf'
+                alt='Resume'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='py-3 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
         </div>
       </section>
