@@ -116,7 +116,7 @@ const About = () => {
               >
                 Learn more
               </button>
-              <a
+              {/* <a
                 download
                 href='/public/Mikyle-Resume.pdf'
                 alt='Resume'
@@ -125,7 +125,7 @@ const About = () => {
                 className='py-3 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
               >
                 Download Resume
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
