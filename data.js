@@ -120,7 +120,7 @@ export const projects = [
     description:
       'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',
     skills: ['HTML', 'CSS', 'Shopify'],
-    live: 'https://brewlab.ph/',
+    live: 'https://muhkyle17.github.io/brewlabph/',
     source: 'https://github.com/muhkyle17/brewlabph',
   },
   {
