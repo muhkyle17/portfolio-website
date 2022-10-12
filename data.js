@@ -31,6 +31,7 @@ import Omnifood from './public/projects/omnifood-project.png'
 import Instox from './public/projects/instox.png'
 import TicTacToe from './public/projects/tic-tac-toe.png'
 import WebDevPortfolio from './public/projects/web-dev-portfolio.png'
+import GithubFinder from './public/projects/github-finder.png'
 
 export const navigation = [
   {
@@ -130,6 +131,14 @@ export const projects = [
     skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
     live: 'https://instox.herokuapp.com/',
     source: 'https://github.com/bananakiu/stock-trading-app',
+  },
+  {
+    title: 'Github Finder',
+    image: GithubFinder,
+    description: `An app that allows you to search for github repositories that maximizes usage of the Github API. Upon searching a github user, you can view the user's profile that an in depth description of the user's github profile along with their latest repositories. You can then click a link that leads you straight to the user's actual github profile.`,
+    skills: ['HTML', 'CSS', 'Reactjs'],
+    live: 'https://github-finder-v8rdja29g-muhkyle17.vercel.app/',
+    source: 'https://github.com/muhkyle17/github-finder',
   },
   {
     title: 'Natours',
