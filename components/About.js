@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { FiX } from 'react-icons/fi'
+import Link from 'next/link'
 
 // Import internals
 import PictureOfMe from '../public/CON_1265.jpg'
@@ -116,16 +117,11 @@ const About = () => {
               >
                 Learn more
               </button>
-              {/* <a
-                download
-                href='/public/Mikyle-Resume.pdf'
-                alt='Resume'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='py-3 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
-              >
-                Download Resume
-              </a> */}
+              <div className="className='py-3 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'">
+                <Link target='_blank' download href='/Mikyle-Resume.pdf'>
+                  Download Resume
+                </Link>
+              </div>
             </div>
           </div>
         </div>
