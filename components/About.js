@@ -110,8 +110,8 @@ const About = () => {
                 onClick={() => setShowModal(true)}>
                 Learn more
               </button>
-              <div className="className='py-3 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'">
-                <Link target='_blank' download href='/Mikyle-Resume.pdf'>
+              <div className="className='py-3 px-7 w-fit font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary cursor-pointer hover:bg-secondary-hover md:btn-lg transition-all">
+                <Link target={'_blank'} download href='/Mikyle-Resume.pdf'>
                   Download Resume
                 </Link>
               </div>

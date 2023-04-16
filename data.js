@@ -11,6 +11,7 @@ import {
   FiTag,
   FiMail,
   FiMapPin,
+  FiLinkedin,
 } from 'react-icons/fi'
 
 // Skills images
@@ -62,6 +63,10 @@ export const navigation = [
 
 // social
 export const social = [
+  {
+    icon: <FiLinkedin />,
+    href: 'https://www.linkedin.com/in/mikylereyes/',
+  },
   {
     icon: <FiTwitter />,
     href: 'https://twitter.com/MiksterMik',
