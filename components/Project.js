@@ -21,7 +21,7 @@ const Project = ({ title, image, skills, description, live, source }) => {
           return (
             <p
               key={index}
-              className='bg-primary text-center flex items-center justify-center rounded-full py-[0.4rem] px-4 text-sm'>
+              className='bg-primary text-center flex items-center justify-center rounded-full py-[0.4rem] px-4 text-[0.84rem] sm:text-sm'>
               {item}
             </p>
           )
