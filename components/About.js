@@ -111,8 +111,10 @@ const About = () => {
                 Learn more
               </button>
               <div className='py-3 px-7 w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary cursor-pointer hover:bg-secondary-hover md:btn-lg transition-all'>
-                <Link target={'_blank'} download href='/Mikyle-Resume.pdf'>
-                  Download Resume
+                <Link download href='/Mikyle-Resume.pdf' passHref>
+                  <a target='_blank' rel='noopener noreferrer'>
+                    Download Resume
+                  </a>
                 </Link>
               </div>
             </div>
