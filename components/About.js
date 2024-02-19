@@ -80,7 +80,7 @@ const About = () => {
 
   return (
     <>
-      <section id='about' className='py-12 lg:py-16 bg-secondary'>
+      <section id='about' className='py-12 lg:py-16 //bg-secondary'>
         <div className='container mx-auto flex flex-wrap lg:flex-nowrap h-full gap-10'>
           <div className='flex items-start justify-center w-full'>
             <Image
