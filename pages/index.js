@@ -6,7 +6,7 @@ import Header from '../components/common/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Skills from '../components/Skills'
-import Portfolio from '../components/Portfolio'
+import PortfolioHome from '../components/Portfolio-Home'
 import Footer from '../components/common/Footer'
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
         <Header />
         <Hero />
         {/* <About /> */}
-        {/* <Portfolio /> */}
+        <PortfolioHome />
         <Skills />
         <Footer />
       </div>
