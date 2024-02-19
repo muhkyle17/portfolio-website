@@ -1,5 +1,6 @@
 // Import externals
 import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 // Import internals
 import Nav from '../Nav'
@@ -8,6 +9,7 @@ import NavMobile from '../NavMobile'
 
 const Header = ({ hidden }) => {
   const [bg, setBg] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -19,15 +21,14 @@ const Header = ({ hidden }) => {
     <header
       className={`${
         bg ? 'bg-tertiary h-20' : 'h-24'
-      } items-center fixed top-0 w-full text-white z-10 transition-all duration-300 px-10 md:px-7 lg:px-0`}
-    >
+      } items-center fixed top-0 w-full text-white z-10 transition-all duration-300 px-10 md:px-7 lg:px-0`}>
       <div className='container mx-auto h-full flex justify-between items-center'>
-        <a
-          href='#'
-          className='text-5xl name hover:text-primary transition-all duration-300'
-        >
+        <button
+          onClick={() => router.push('/')}
+          type='button'
+          className='text-5xl name hover:text-primary transition-all duration-300'>
           Mikyle Reyes
-        </a>
+        </button>
 
         <div className='hidden lg:block'>
           <Nav />
