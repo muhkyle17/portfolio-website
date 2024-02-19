@@ -7,7 +7,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Portfolio from '../components/Portfolio'
-import Footer from '../components/Footer'
+import Footer from '../components/common/Footer'
 
 export default function Home() {
   return (
@@ -21,9 +21,9 @@ export default function Home() {
       <div className='relative'>
         <Header />
         <Hero />
-        <About />
+        {/* <About /> */}
+        {/* <Portfolio /> */}
         <Skills />
-        <Portfolio />
         <Footer />
       </div>
     </div>
