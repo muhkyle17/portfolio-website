@@ -117,6 +117,13 @@ const About = () => {
                   </a>
                 </Link>
               </div>
+              <a
+                className='py-3 px-7 w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
+                target='_blank'
+                rel='noreferrer'
+                href='https://mikylereyes.notion.site/Resume-cb5577d7692e4fa08afc58c0d741694e?pvs=4'>
+                Notion Resume
+              </a>
             </div>
           </div>
         </div>
