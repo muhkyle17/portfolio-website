@@ -182,3 +182,32 @@ export const projects = [
     source: 'https://github.com/muhkyle17/web-developer-portfolio',
   },
 ]
+
+export const projectsShortened = [
+  {
+    title: 'Brew Lab PH',
+    image: BrewLab,
+    description:
+      'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',
+    skills: ['HTML', 'CSS', 'Shopify'],
+    live: 'https://muhkyle17.github.io/brewlabph/',
+    source: 'https://github.com/muhkyle17/brewlabph',
+  },
+  {
+    title: 'Instox',
+    image: Instox,
+    description:
+      'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
+    skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
+    live: 'https://instox.herokuapp.com/',
+    source: 'https://github.com/bananakiu/stock-trading-app',
+  },
+  {
+    title: 'Github Finder',
+    image: GithubFinder,
+    description: `An app that allows you to search for github repositories that maximizes usage of the Github API. Upon searching a github user, you can view the user's profile that an in depth description of the user's github profile along with their latest repositories. You can then click a link that leads you straight to the user's actual github profile.`,
+    skills: ['HTML', 'CSS', 'Reactjs'],
+    live: 'https://github-finder-v8rdja29g-muhkyle17.vercel.app/',
+    source: 'https://github.com/muhkyle17/github-finder',
+  },
+]
