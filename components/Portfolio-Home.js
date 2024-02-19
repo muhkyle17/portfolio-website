@@ -15,19 +15,8 @@ const PortfolioHome = () => {
         <button
           type='button'
           onClick={() => router.push('/projects')}
-          className='self-end flex items-center gap-2'>
-          See more work
-          <svg
-            data-bbox='9 70.9 181 59'
-            className='w-10 h-10'
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 200 200'>
-            <g>
-              <path
-                d='M159 70.9l-2.2 2.4L183.6 99H9v3h174.6l-26.2 25.3 2.1 2.6 30.5-29.3-31-29.7z'
-                fill='#ffffff'></path>
-            </g>
-          </svg>
+          className='self-end flex items-center gap-2 transition-all duration-300 hover:gap-3 hover:text-primary text-lg'>
+          See more work <span className='mb-2 text-2xl'>⟶</span>
         </button>
       </div>
     </section>
