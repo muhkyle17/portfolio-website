@@ -2,8 +2,8 @@
 import React from 'react'
 
 // Import internals
-import Project from './Project'
-import { projects } from '../data'
+import Project from '../Project'
+import { projects } from '../../data'
 
 const Projects = () => {
   return (
