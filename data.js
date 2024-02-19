@@ -36,15 +36,15 @@ import GithubFinder from './public/projects/github-finder.png'
 
 export const navigation = [
   {
-    name: 'about me',
+    name: 'About Me',
     href: '/about-me',
   },
   {
-    name: 'resume',
+    name: 'Resume',
     href: '/resume',
   },
   {
-    name: 'projects',
+    name: 'Projects',
     href: '/projects',
   },
   // {

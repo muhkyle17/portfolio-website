@@ -14,7 +14,7 @@ const Nav = () => {
               <button
                 onClick={() => router.push(`/${item.href}`)}
                 className='border-b border-transparent hover:border-primary hover:text-primary cursor-pointer transition-all duration-300 py-[3px]'>
-                {item.name.toUpperCase()}
+                {item.name}
               </button>
             </li>
           )
