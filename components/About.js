@@ -6,7 +6,8 @@ import Link from 'next/link'
 
 // Import internals
 import PictureOfMe from '../public/CON_1265.jpg'
-import PictureOfMe2 from '../public/Mikyle_pic_normal.jpeg'
+// import PictureOfMe2 from '../public/Mikyle_pic_normal.jpeg'
+import PictureOfMe2 from '../public/about-me-hero2.jpg'
 
 function Modal({ setShowModal }) {
   const closeOnEscapeKeyDown = e => {
@@ -28,14 +29,14 @@ function Modal({ setShowModal }) {
         className='h-screen flex justify-center items-center bg-[#000000a9]'
         onClick={() => setShowModal(false)}>
         <div
-          className='w-[80%] max-h-[40rem] text-center xl:text-left bg-gray-800 rounded-lg py-10 sm:px-20 overflow-auto relative'
+          className='w-[85%] max-h-[40rem] text-center xl:text-left bg-gray-800 rounded-lg py-16 sm:px-12 overflow-auto relative'
           onClick={e => e.stopPropagation()}>
           <FiX
             className='absolute top-4 right-5 text-2xl cursor-pointer'
             onClick={() => setShowModal(false)}
           />
           <div className='flex justify-center flex-wrap xl:flex-nowrap gap-8 h-[30rem]'>
-            <div className='self-center w-[50%] xl:max-w-[23rem]'>
+            <div className='self-center w-[60%] xl:max-w-[23rem]'>
               <Image
                 src={PictureOfMe2}
                 alt='Picture of me in Modal'
@@ -43,8 +44,8 @@ function Modal({ setShowModal }) {
                 className='rounded-xl'
               />
             </div>
-            <div className='flex flex-col gap-6 xl:gap-1 justify-between max-w-[50%] text-base'>
-              <h2 className='text-center text-3xl sm:text-4xl'>About Me</h2>
+            <div className='flex flex-col gap-6 xl:gap-7 self-center max-w-[60%] text-base'>
+              <h2 className='text-center font-semibold text-3xl sm:text-4xl'>About Me</h2>
               <p>
                 Hi! I&lsquo;m Mikyle, a developer and investor from the Philippines, currently
                 living and working in Vancouver. My coding journey started early in university where
