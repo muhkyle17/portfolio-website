@@ -20,7 +20,6 @@ export default function Home() {
       <div className='relative'>
         <Header />
         <Hero />
-        {/* <About /> */}
         <PortfolioHome />
         <Skills />
         <Footer />

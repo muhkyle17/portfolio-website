@@ -1,8 +1,17 @@
+import Header from '../components/common/Header'
+import Footer from '../components/common/Footer'
+
+import About from '../components/About'
+
 const AboutMePage = () => {
   return (
-    <div>
-      <p>About Me Page</p>
-    </div>
+    <>
+      <Header />
+      <div className='mt-24 mb-[7.2rem]'>
+        <About />
+      </div>
+      <Footer />
+    </>
   )
 }
 
