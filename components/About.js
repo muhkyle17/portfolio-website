@@ -97,12 +97,12 @@ const About = () => {
             <p className='text-primary text-xl'>I&lsquo;m Mikyle.</p>
             {/* <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' /> */}
             <p>
-              I&lsquo;m a Fullstack Developer with a great passion for creating beautiful
-              applications and websites.
+              I&lsquo;m a Fullstack Developer with a passion for creating beautiful applications and
+              websites.
             </p>
             <p>
-              Although I specialize in crafting user interfaces using modern web technologies,
-              I&lsquo;m also learning different backend technologies to become a better developer.
+              I specialize in crafting user interfaces using modern web technologies tying it
+              together with backend technologies to create meaningful products.
             </p>
             <div className='flex flex-wrap gap-4'>
               <button
