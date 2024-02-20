@@ -211,3 +211,31 @@ export const projectsShortened = [
     source: 'https://github.com/muhkyle17/github-finder',
   },
 ]
+
+export const experience = [
+  {
+    company: 'Creator.co',
+    jobTitle: 'Software Developer',
+    duration: 'Jan 2023 - Present',
+    location: 'Vancouver, Canada',
+    responsibilities: [
+      'Full-stack engineer driving innovation in the integration and developer team, dedicated to shaping and elevating the experience within Creator.co‘s 3 platforms. ',
+      'Spearheaded the development of the internal affiliate program on all 3 platforms utilizing the Shopify and WooCommerce APIs and webhooks to ensure seamless integration and functionality.',
+      'Contributed to the front-end services using React.js, styled components, react context, ant design and react-query.',
+      'Contributed to the back-end services for webhooks and integrations built in Node.js (Express.js) and Prisma with MySQL and PostgreSQL.',
+    ],
+  },
+  {
+    company: 'Growsari',
+    jobTitle: 'Front-End Developer',
+    jobType: 'Full-time Contract Based',
+    duration: 'Jan 2022 - Feb 2024',
+    location: 'Manila, Philippines',
+    responsibilities: [
+      'Migrated company’s task tracking app into a formal portal using Next.js to help managers better track tasks of employees.',
+      'Used Apollo Client to connect task tracking app to the backend to optimize Frontend features.',
+      'Updated company’s task tracker store entry page to help users log call attempts and tasks for each store they are assigned to using React.js and Apollo Client.',
+      'Implemented the interface for the company’s task management system in order for managers to create, update, display, and delete forms & tasks',
+    ],
+  },
+]
