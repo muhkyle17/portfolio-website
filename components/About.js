@@ -82,20 +82,20 @@ const About = () => {
     <>
       <section id='about' className='py-12 lg:py-16 //bg-secondary'>
         <div className='container mx-auto flex flex-wrap lg:flex-nowrap h-full gap-10'>
-          <div className='flex items-start justify-center w-full'>
+          <div className='flex items-start justify-center w-full rounded-lg rounded-tl-[50px] rounded-br-[50px]'>
             <Image
               src={PictureOfMe}
               alt='Picture of me with background'
               width={610}
               height={400}
               layout='intrinsic'
-              className='rounded-xl'
+              className='rounded-lg rounded-tl-[50px] rounded-br-[50px]'
             />
           </div>
           <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0 text-lg'>
-            <h1 className='text-4xl font-bold'>About Me</h1>
-            <p className='text-primary text-2xl'>Mikyle Reyes</p>
-            <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
+            <h1 className='text-7xl font-bold'>Hello,</h1>
+            <p className='text-primary text-xl'>I&lsquo;m Mikyle.</p>
+            {/* <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' /> */}
             <p>
               I&lsquo;m a Fullstack Developer with a great passion for creating beautiful
               applications and websites.
@@ -104,9 +104,9 @@ const About = () => {
               Although I specialize in crafting user interfaces using modern web technologies,
               I&lsquo;m also learning different backend technologies to become a better developer.
             </p>
-            <div className='flex gap-4'>
+            <div className='flex flex-wrap gap-4'>
               <button
-                className='py-3 px-7 w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
+                className='py-3 px-7 h-fit w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
                 onClick={() => setShowModal(true)}>
                 Learn more
               </button>
