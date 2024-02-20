@@ -81,8 +81,8 @@ const About = () => {
 
   return (
     <>
-      <section id='about' className='py-12 lg:py-16 //bg-secondary'>
-        <div className='container mx-auto flex flex-wrap lg:flex-nowrap h-full gap-10'>
+      <section id='about' className='py-12 lg:py-16'>
+        <div className='container mx-auto flex items-center items-baseline// flex-wrap lg:flex-nowrap h-full gap-10'>
           <div className='flex items-start justify-center w-full rounded-lg rounded-tl-[50px] rounded-br-[50px]'>
             <Image
               src={PictureOfMe}
@@ -96,13 +96,13 @@ const About = () => {
           <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0 text-lg'>
             <h1 className='text-7xl font-bold'>Hello,</h1>
             <p className='text-primary text-xl'>I&lsquo;m Mikyle.</p>
-            {/* <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' /> */}
+            <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
             <p>
               I&lsquo;m a Fullstack Developer with a passion for creating beautiful applications and
               websites.
             </p>
             <p>
-              I specialize in crafting user interfaces using modern web technologies tying it
+              I specialize in crafting user interfaces using modern web technologies, tying it
               together with backend technologies to create meaningful products.
             </p>
             <div className='flex flex-wrap gap-4'>
