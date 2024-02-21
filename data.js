@@ -311,3 +311,30 @@ export const freelance = [
     ],
   },
 ]
+
+export const techSkills = [
+  {
+    type: 'Proficient',
+    techStacks: [
+      'HTML5',
+      'CSS3',
+      'SASS',
+      'Tailwind CSS',
+      'JavaScript',
+      'React.js',
+      'Next.js',
+      'Ruby on Rails',
+      'Git',
+      'Apollo Client',
+      'Node.js',
+      'Express.js',
+      'Prisma',
+      'MySQL',
+      'GraphQL',
+    ],
+  },
+  {
+    type: 'Exposure',
+    techStacks: ['Vue.js', 'React Native', 'Python'],
+  },
+]
