@@ -252,3 +252,19 @@ export const experience = [
     ],
   },
 ]
+
+export const resumeProjects = [
+  {
+    title: 'Messenger App',
+    date: 'Aug 2021',
+    githubLink: 'https://github.com/bananakiu/slack-api-project',
+    shortDescription:
+      'A React JS Chat App that allows for private messaging amongst users within the platform.',
+    detailedDescription: [
+      'Implemented a private messaging feature that allows users to message all other users within the application.',
+      'Developed chat components using ReactJS, and JavaScript to streamline user experience flow.',
+      'Added a feature to be able to check the profile of the current user and to log in and out of the application.',
+      'Used Axios to make request with the backend for seamless messaging.',
+    ],
+  },
+]
