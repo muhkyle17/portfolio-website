@@ -295,3 +295,19 @@ export const resumeProjects = [
     ],
   },
 ]
+
+export const freelance = [
+  {
+    company: 'Brew Lab PH',
+    duration: 'May 2021 - Jan 2022',
+    githubLink: 'https://github.com/muhkyle17/brewlabph/tree/main',
+    shortDescription:
+      'An e-commerce website that allows users to buy beer kits online using Shopify’s buy button feature.',
+    detailedDescription: [
+      'Built company’s e-commerce website to improve customer engagement and retention',
+      'Utilized Shopify buy button feature onto website to increase customer sales',
+      'Assisted in-house designers in making company website user-friendly',
+      'Implemented appealing design features that address company’s client needs',
+    ],
+  },
+]
