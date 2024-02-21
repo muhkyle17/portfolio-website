@@ -1,7 +1,6 @@
 import Link from 'next/link'
-import { experience } from '../../data'
 
-const Experience = () => {
+const Experience = ({ experience }) => {
   return (
     <div className='flex flex-col gap-8 w-4/6'>
       <div className='flex w-full justify-between items-center'>

@@ -9,7 +9,7 @@ const Resume = () => {
       <div className='flex flex-col items-center gap-16'>
         <h1 className='text-5xl'>Resume</h1>
 
-        <Experience />
+        <Experience experience={experience} />
 
         <div className='flex flex-col gap-8 w-4/6'>
           <h1 className='text-3xl'>Projects</h1>
