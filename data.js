@@ -238,4 +238,17 @@ export const experience = [
       'Implemented the interface for the company’s task management system in order for managers to create, update, display, and delete forms & tasks',
     ],
   },
+  {
+    company: 'Makisu Software Consulting Services',
+    jobTitle: 'Customer Success Manager',
+    duration: 'Mar 2020 - Apr 2021',
+    location: 'Manila, Philippines',
+    responsibilities: [
+      'Managed company’s team of virtual assistants in helping and assisting required tasks of Philippine & US based clients leading up to 300+ hours of Marti virtual assistance.',
+      'Assisted in marketing efforts to develop and oversee marketing campaigns to promote Marti’s services.',
+      'Managed social media accounts to cultivate social media following and promote company’s overall brand.',
+      'Acquired 30+ freelancers and agencies into the Marti Partner program to work on freelance projects in the U.S',
+      'Connected 10+ freelancers and agencies with different companies in the Philippines and US.',
+    ],
+  },
 ]
