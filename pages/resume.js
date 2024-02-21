@@ -1,6 +1,6 @@
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
-import Resume from '../components/Resume'
+import Resume from '../components/resume/Resume'
 
 const ResumePage = () => {
   return (

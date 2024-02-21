@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FiGithub } from 'react-icons/fi'
-import { experience, resumeProjects as projects } from '../data'
+import { experience, resumeProjects as projects } from '../../data'
 
 const Resume = () => {
   return (
