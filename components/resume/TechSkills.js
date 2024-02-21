@@ -10,7 +10,7 @@ const TechSkills = ({ techSkills }) => {
               <h3 className='font-bold'>
                 {skill.type}:{' '}
                 {skill.techStacks.map(stack => (
-                  <span key={Math.random} className='font-normal'>
+                  <span key={Math.random()} className='font-normal'>
                     {`${stack}, `}
                   </span>
                 ))}
