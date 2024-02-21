@@ -9,9 +9,10 @@ const TechSkills = ({ techSkills }) => {
             <div key={Math.random()}>
               <h3 className='font-bold'>
                 {skill.type}:{' '}
-                {skill.techStacks.map(stack => (
+                {skill.techStacks.map((stack, index) => (
                   <span key={Math.random()} className='font-normal'>
-                    {`${stack}, `}
+                    {stack}
+                    {index !== skill.techStacks.length - 1 ? ',' : ''}{' '}
                   </span>
                 ))}
               </h3>
