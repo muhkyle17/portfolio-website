@@ -281,4 +281,17 @@ export const resumeProjects = [
       'Utilized the IEX gem to retrieve real-time stock data like volume, last price, change and % change.',
     ],
   },
+  {
+    title: 'Task App',
+    date: 'October 2021',
+    githubLink: 'https://github.com/muhkyle17/task_planner',
+    shortDescription:
+      'A Ruby on Rails task management application that allows users to add, edit and track their projects & tasks.',
+    detailedDescription: [
+      'Integrated a signup and login feature to allow users to store their projects tasks on personal accounts.',
+      'Allowed users to create custom projects to sort their tasks easily.',
+      'Enabled users to edit, update, and delete projects and tasks.',
+      'Added a feature that allows users to check the progress of their project based on the completion of its tasks.',
+    ],
+  },
 ]
