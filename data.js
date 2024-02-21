@@ -267,4 +267,18 @@ export const resumeProjects = [
       'Used Axios to make request with the backend for seamless messaging.',
     ],
   },
+  {
+    title: 'Stock Trading App',
+    date: 'Sept 2021',
+    githubLink: 'https://github.com/bananakiu/stock-trading-app',
+    shortDescription:
+      'Stock Trading App built with Ruby on Rails that allows users to purchase stocks using an API with a feature for market monitoring.',
+    detailedDescription: [
+      'Ensure users are able to sign up and login to their own password-protected accounts.',
+      'Added a news section where users can view the latest news on top companies and stocks like Ford and Apple',
+      'Included a Stocks tab to view the stocks listed as Most Active, Top Gainers, Top Losers and relevant data.',
+      'Implemented an admin dashboard to view, approve, create, monitor and delete users.',
+      'Utilized the IEX gem to retrieve real-time stock data like volume, last price, change and % change.',
+    ],
+  },
 ]
