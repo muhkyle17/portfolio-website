@@ -1,7 +1,8 @@
-import { experience, resumeProjects as projects, freelance } from '../../data'
+import { experience, resumeProjects as projects, freelance, techSkills } from '../../data'
 import Experience from './Experience'
 import ResumeProjects from './ResumeProjects'
 import Freelance from './Freelance'
+import TechSkills from './TechSkills'
 
 const Resume = () => {
   return (
@@ -12,6 +13,7 @@ const Resume = () => {
         <Experience experience={experience} />
         <ResumeProjects projects={projects} />
         <Freelance freelance={freelance} />
+        <TechSkills techSkills={techSkills} />
       </div>
     </section>
   )
