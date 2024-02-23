@@ -1,7 +1,7 @@
 const Education = ({ education }) => {
   return (
     <div className='flex flex-col gap-8 w-4/6'>
-      <p>Education</p>
+      <h1 className='text-3xl'>Education</h1>
 
       {education.map(edu => {
         return (
