@@ -338,3 +338,12 @@ export const techSkills = [
     techStacks: ['Vue.js', 'React Native', 'Python'],
   },
 ]
+
+export const education = [
+  {
+    program: 'Full Stack Web Development',
+    school: 'Avion School',
+    duration: 'June 2021 - December 2021',
+    location: 'Manila, Philippines',
+  },
+]
