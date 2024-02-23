@@ -346,4 +346,10 @@ export const education = [
     duration: 'June 2021 - December 2021',
     location: 'Manila, Philippines',
   },
+  {
+    program: 'B.S. Entrepreneurship',
+    school: 'De La Salle University',
+    duration: 'June 2015 - August 2020',
+    location: 'Manila, Philippines',
+  },
 ]
