@@ -3,6 +3,7 @@ import Experience from './Experience'
 import ResumeProjects from './ResumeProjects'
 import Freelance from './Freelance'
 import TechSkills from './TechSkills'
+import Education from './Education'
 
 const Resume = () => {
   return (
@@ -14,6 +15,7 @@ const Resume = () => {
         <ResumeProjects projects={projects} />
         <Freelance freelance={freelance} />
         <TechSkills techSkills={techSkills} />
+        <Education />
       </div>
     </section>
   )
