@@ -211,3 +211,145 @@ export const projectsShortened = [
     source: 'https://github.com/muhkyle17/github-finder',
   },
 ]
+
+export const experience = [
+  {
+    company: 'Creator.co',
+    jobTitle: 'Software Developer',
+    duration: 'Jan 2023 - Present',
+    location: 'Vancouver, Canada',
+    responsibilities: [
+      'Full-stack engineer driving innovation in the integration and developer team, dedicated to shaping and elevating the experience within Creator.co‘s 3 platforms. ',
+      'Spearheaded the development of the internal affiliate program on all 3 platforms utilizing the Shopify and WooCommerce APIs and webhooks to ensure seamless integration and functionality.',
+      'Contributed to the front-end services using React.js, styled components, react context, ant design and react-query.',
+      'Contributed to the back-end services for webhooks and integrations built in Node.js (Express.js) and Prisma with MySQL and PostgreSQL.',
+    ],
+  },
+  {
+    company: 'Growsari',
+    jobTitle: 'Front-End Developer',
+    jobType: 'Full-time Contract Based',
+    duration: 'Jan 2022 - Feb 2024',
+    location: 'Manila, Philippines',
+    responsibilities: [
+      'Migrated company’s task tracking app into a formal portal using Next.js to help managers better track tasks of employees.',
+      'Used Apollo Client to connect task tracking app to the backend to optimize Frontend features.',
+      'Updated company’s task tracker store entry page to help users log call attempts and tasks for each store they are assigned to using React.js and Apollo Client.',
+      'Implemented the interface for the company’s task management system in order for managers to create, update, display, and delete forms & tasks',
+    ],
+  },
+  {
+    company: 'Makisu Software Consulting Services',
+    jobTitle: 'Customer Success Manager',
+    duration: 'Mar 2020 - Apr 2021',
+    location: 'Manila, Philippines',
+    responsibilities: [
+      'Managed company’s team of virtual assistants in helping and assisting required tasks of Philippine & US based clients leading up to 300+ hours of Marti virtual assistance.',
+      'Assisted in marketing efforts to develop and oversee marketing campaigns to promote Marti’s services.',
+      'Managed social media accounts to cultivate social media following and promote company’s overall brand.',
+      'Acquired 30+ freelancers and agencies into the Marti Partner program to work on freelance projects in the U.S',
+      'Connected 10+ freelancers and agencies with different companies in the Philippines and US.',
+    ],
+  },
+]
+
+export const resumeProjects = [
+  {
+    title: 'Messenger App',
+    date: 'Aug 2021',
+    githubLink: 'https://github.com/bananakiu/slack-api-project',
+    shortDescription:
+      'A React JS Chat App that allows for private messaging amongst users within the platform.',
+    detailedDescription: [
+      'Implemented a private messaging feature that allows users to message all other users within the application.',
+      'Developed chat components using ReactJS, and JavaScript to streamline user experience flow.',
+      'Added a feature to be able to check the profile of the current user and to log in and out of the application.',
+      'Used Axios to make request with the backend for seamless messaging.',
+    ],
+  },
+  {
+    title: 'Stock Trading App',
+    date: 'Sept 2021',
+    githubLink: 'https://github.com/bananakiu/stock-trading-app',
+    shortDescription:
+      'Stock Trading App built with Ruby on Rails that allows users to purchase stocks using an API with a feature for market monitoring.',
+    detailedDescription: [
+      'Ensure users are able to sign up and login to their own password-protected accounts.',
+      'Added a news section where users can view the latest news on top companies and stocks like Ford and Apple',
+      'Included a Stocks tab to view the stocks listed as Most Active, Top Gainers, Top Losers and relevant data.',
+      'Implemented an admin dashboard to view, approve, create, monitor and delete users.',
+      'Utilized the IEX gem to retrieve real-time stock data like volume, last price, change and % change.',
+    ],
+  },
+  {
+    title: 'Task App',
+    date: 'October 2021',
+    githubLink: 'https://github.com/muhkyle17/task_planner',
+    shortDescription:
+      'A Ruby on Rails task management application that allows users to add, edit and track their projects & tasks.',
+    detailedDescription: [
+      'Integrated a signup and login feature to allow users to store their projects tasks on personal accounts.',
+      'Allowed users to create custom projects to sort their tasks easily.',
+      'Enabled users to edit, update, and delete projects and tasks.',
+      'Added a feature that allows users to check the progress of their project based on the completion of its tasks.',
+    ],
+  },
+]
+
+export const freelance = [
+  {
+    company: 'Brew Lab PH',
+    duration: 'May 2021 - Jan 2022',
+    githubLink: 'https://github.com/muhkyle17/brewlabph/tree/main',
+    shortDescription:
+      'An e-commerce website that allows users to buy beer kits online using Shopify’s buy button feature.',
+    detailedDescription: [
+      'Built company’s e-commerce website to improve customer engagement and retention',
+      'Utilized Shopify buy button feature onto website to increase customer sales',
+      'Assisted in-house designers in making company website user-friendly',
+      'Implemented appealing design features that address company’s client needs',
+    ],
+  },
+]
+
+export const techSkills = [
+  {
+    type: 'Proficient',
+    techStacks: [
+      'HTML5',
+      'CSS3',
+      'SASS',
+      'Tailwind CSS',
+      'JavaScript',
+      'React.js',
+      'Next.js',
+      'Ruby on Rails',
+      'Git',
+      'Apollo Client',
+      'Node.js',
+      'Express.js',
+      'Prisma',
+      'MySQL',
+      'GraphQL',
+    ],
+  },
+  {
+    type: 'Exposure',
+    techStacks: ['Vue.js', 'React Native', 'Python'],
+  },
+]
+
+export const education = [
+  {
+    program: 'Full Stack Web Development',
+    school: 'Avion School',
+    duration: 'June 2021 - December 2021',
+    location: 'Manila, Philippines',
+  },
+  {
+    program: 'B.S. Entrepreneurship',
+    school: 'De La Salle University',
+    duration: 'June 2015 - August 2020',
+    location: 'Manila, Philippines',
+  },
+]
