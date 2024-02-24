@@ -25,7 +25,9 @@ const Experience = ({ experience }) => {
       </div>
 
       {experience.map(job => (
-        <div key={job.company} className='flex gap-5 px-10 py-14 bg-primary rounded-[45px]'>
+        <div
+          key={job.company}
+          className='flex gap-5 px-10 py-14 bg-transparent  border-2 border-primary rounded-[45px]'>
           <div className='w-2/5 text-[#EEEEEE]'>
             <h2 className='font-bold text-2xl'>{job.company}</h2>
             <p className='font-semibold text-lg'>{job.jobTitle}</p>

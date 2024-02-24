@@ -8,7 +8,7 @@ const ResumeProjects = ({ projects }) => {
       {projects.map(project => (
         <div
           key={Math.random()}
-          className='flex flex-col gap-5 px-10 py-14 bg-primary rounded-[45px] text-[#EEEEEE]'>
+          className='flex flex-col gap-5 px-10 py-14 bg-transparent border-2 border-primary rounded-[45px] text-[#EEEEEE]'>
           <div className='flex flex-col gap-1'>
             <h2 className='font-bold text-2xl'>{project.title}</h2>
             <div className='flex items-center font-semibold text-lg'>
