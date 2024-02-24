@@ -17,7 +17,7 @@ const ResumeProjects = ({ projects }) => {
                 href={project?.githubLink}
                 target='_blank'
                 rel='noreferrer'
-                className='pl-3 hover:text-tertiary'>
+                className='pl-3 hover:text-primary'>
                 <FiGithub />
               </a>
             </div>
