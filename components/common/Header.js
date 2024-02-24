@@ -26,8 +26,8 @@ const Header = ({ hidden }) => {
         <button
           onClick={() => router.push('/')}
           type='button'
-          className='text-5xl name hover:text-primary transition-all duration-300'>
-          Mikyle Reyes
+          className='name text-2xl hover:text-primary transition-all duration-300'>
+          MR
         </button>
 
         <div className='hidden lg:block'>
