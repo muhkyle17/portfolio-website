@@ -7,7 +7,7 @@ const Experience = ({ experience }) => {
         <h1 className='text-3xl'>Experience</h1>
 
         <div className='flex gap-5'>
-          <div className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-full hover:bg-primaryDarker bg-primary cursor-pointer hover:bg-secondary-hover md:btn-lg transition-all'>
+          <div className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center cursor-pointer justify-center rounded-full bg-primary hover:bg-transparent border-2 border-primary md:btn-lg duration-500 transition-all'>
             <Link download href='/Mikyle-Resume.pdf' passHref>
               <a target='_blank' rel='noopener noreferrer'>
                 Download Resume
@@ -15,7 +15,7 @@ const Experience = ({ experience }) => {
             </Link>
           </div>
           <a
-            className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-full hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
+            className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center cursor-pointer justify-center rounded-full bg-primary hover:bg-transparent border-2 border-primary md:btn-lg duration-500 transition-all'
             target='_blank'
             rel='noreferrer'
             href='https://mikylereyes.notion.site/Resume-cb5577d7692e4fa08afc58c0d741694e?pvs=4'>
