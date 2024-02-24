@@ -106,7 +106,7 @@ const About = () => {
             </p>
             <div className='flex flex-wrap gap-4'>
               <button
-                className='py-3 px-7 h-fit w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-xl hover:bg-primaryDarker bg-primary hover:bg-secondary-hover md:btn-lg transition-all'
+                className='py-3 px-7 h-fit w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-full bg-primary border-2 border-primary hover:bg-transparent md:btn-lg transition-all'
                 onClick={() => setShowModal(true)}>
                 Learn more
               </button>
