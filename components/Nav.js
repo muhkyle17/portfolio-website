@@ -7,7 +7,7 @@ const Nav = () => {
   const router = useRouter()
   return (
     <nav>
-      <ul className='flex gap-14 text-sm capitalize'>
+      <ul className='flex gap-14 text-sm capitalize items-center justify-center'>
         {navigation.map((item, index) => {
           return (
             <li className='text-white' key={index}>

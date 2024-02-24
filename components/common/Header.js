@@ -26,14 +26,14 @@ const Header = ({ hidden }) => {
         <button
           onClick={() => router.push('/')}
           type='button'
-          className='name text-2xl hover:text-primary transition-all duration-300'>
+          className='name text-2xl hover:text-primary transition-all duration-300 w-1/3 flex justify-start'>
           MR
         </button>
 
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block w-1/3'>
           <Nav />
         </div>
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block w-1/3'>
           <Social />
         </div>
         <div className='lg:hidden'>
