@@ -6,7 +6,7 @@ import About from '../components/About'
 
 const AboutMePage = () => {
   return (
-    <>
+    <div className='relative h-full min-h-[90vh]'>
       <Head>
         <title>Mikyle Reyes</title>
         <meta name='description' content='Mikyle Reyes' />
@@ -16,8 +16,10 @@ const AboutMePage = () => {
       <div className='mt-24 mb-[7.2rem]'>
         <About />
       </div>
-      <Footer />
-    </>
+      <div className='absolute bottom-0 w-full'>
+        <Footer />
+      </div>
+    </div>
   )
 }
 
