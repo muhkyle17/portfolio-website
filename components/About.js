@@ -28,7 +28,7 @@ function Modal({ setShowModal }) {
         className='h-screen flex justify-center items-center bg-[#000000a9]'
         onClick={() => setShowModal(false)}>
         <div
-          className='w-[85%] max-h-[40rem] text-center xl:text-left bg-gray-800 rounded-lg py-16 sm:px-12 overflow-auto relative'
+          className='w-[85%] max-h-[40rem] text-center xl:text-left bg-[#232323] rounded-lg py-16 sm:px-12 overflow-auto relative'
           onClick={e => e.stopPropagation()}>
           <FiX
             className='absolute top-4 right-5 text-2xl cursor-pointer hover:text-primary transition-all duration-300'
