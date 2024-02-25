@@ -27,7 +27,7 @@ const Experience = ({ experience }) => {
       {experience.map(job => (
         <div
           key={job.company}
-          className='flex flex-wrap lg:flex-nowrap gap-5 w-full w-full px-10 py-14 bg-transparent border-2 border-primary rounded-[45px]'>
+          className='flex flex-wrap xl:flex-nowrap gap-5 w-full px-10 py-14 bg-transparent border-2 border-primary rounded-[45px]'>
           <div className='w-full lg:w-2/5 text-[#EEEEEE]'>
             <h2 className='font-bold text-2xl'>{job.company}</h2>
             <p className='font-semibold text-lg'>{job.jobTitle}</p>
@@ -36,7 +36,7 @@ const Experience = ({ experience }) => {
             <p className='text-sm'>{job.location}</p>
           </div>
 
-          <div className='w-full lg:w-3/5'>
+          <div className='w-full xl:w-3/5'>
             <ul className='list-disc flex flex-col gap-2 text-[#EEEEEE]'>
               {job.responsibilities.map(work => (
                 <li key={Math.random()}>{work}</li>
