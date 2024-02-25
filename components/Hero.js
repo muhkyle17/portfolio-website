@@ -17,9 +17,9 @@ const Hero = () => {
             <p className='text-lg text-primary mb-[22px]//'>
               Hey! I&rsquo;m Mikyle, a Fullstack Developer!
             </p>
-            <h1 className='text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] text-center lg:text-left'>
+            <h2 className='hero text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px] text-center lg:text-left'>
               I create beautiful & functional websites that help make a difference.
-            </h1>
+            </h2>
             <p className='pt-4// pb-8// md:pt-6// md:pb-12// max-w-[480px] text-lg text-center lg:text-left'>
               Let&rsquo;s build something great together.
             </p>

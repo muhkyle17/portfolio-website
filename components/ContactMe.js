@@ -12,7 +12,7 @@ const ContactMe = () => {
         <div className='flex flex-col gap-1'>
           <h2 className='text-3xl font-semibold'>I&lsquo;d love to help.</h2>
           <h2 className='text-lg sm:text-xl tracking-wide'>
-            Let me know what you need. I&lsquo;ll get in touch within 24 hours
+            Let me know what you need. I&lsquo;ll get in touch within 24 hours.
           </h2>
         </div>
 
