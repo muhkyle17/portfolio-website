@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 // import icons
 import { XIcon } from '@heroicons/react/outline'
 import { MenuAlt3Icon } from '@heroicons/react/outline'
@@ -17,6 +18,7 @@ import { Link } from 'react-scroll'
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter()
 
   const circleVariants = {
     hidden: {
@@ -75,15 +77,11 @@ const NavMobile = () => {
         {navigation.map((item, index) => {
           return (
             <li key={index} className='mb-8'>
-              <Link
-                to={item.href}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className='text-xl cursor-pointer capitalize'
-              >
+              <button
+                onClick={() => router.push(`${item.href}`)}
+                className='text-xl cursor-pointer capitalize '>
                 {item.name}
-              </Link>
+              </button>
             </li>
           )
         })}
