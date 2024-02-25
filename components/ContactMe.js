@@ -23,7 +23,7 @@ const ContactMe = () => {
 
       <div className='mb-20 w-full md:mb-0 lg:w-1/2'>
         <form
-          action='https://formsubmit.co/reyesmikyle17@gmail.com'
+          action='https://formsubmit.co/f1a477aaf1b97804de07fd7d16f3ff6a'
           method='POST'
           className='flex flex-col gap-7'>
           <input
