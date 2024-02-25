@@ -55,10 +55,10 @@ export const navigation = [
   //   name: 'testimonials',
   //   href: 'testimonials',
   // },
-  // {
-  //   name: 'contact',
-  //   href: 'contact',
-  // },
+  {
+    name: 'Contact',
+    href: 'contact-me',
+  },
 ]
 
 // social

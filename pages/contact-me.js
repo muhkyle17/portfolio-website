@@ -6,7 +6,7 @@ import ContactMeComponent from '../components/ContactMe'
 
 const ContactMe = () => {
   return (
-    <div className='relative h-screen'>
+    <div className='relative h-[91.5vh]'>
       <Head>
         <title>Mikyle Reyes</title>
         <meta name='description' content='Mikyle Reyes' />

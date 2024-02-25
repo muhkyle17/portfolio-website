@@ -3,7 +3,7 @@ import Social from '../components/Social'
 
 const ContactMe = () => {
   return (
-    <section className='container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between gap-10 lg:gap-20 w-full h-full pt-32// mt-[5rem] overflow-hidden relative py-12 lg:py-[3.6rem]'>
+    <section className='container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between gap-10 lg:gap-20 w-full h-full pt-32// mt-[5rem] overflow-hidden relative py-12 lg:pt-[3.6rem]'>
       <div className='flex flex-col items-start justify-center lg:w-1/2 gap-8 lg:gap-10'>
         <h2 className='text-6xl sm:text-7xl tracking-wide font-semibold text-primary'>
           Reach out.
