@@ -3,7 +3,7 @@ import { FiGithub } from 'react-icons/fi'
 const ResumeProjects = ({ projects }) => {
   return (
     <div className='flex flex-col gap-8 w-4/6'>
-      <h1 className='text-3xl'>Projects</h1>
+      <h1 className='text-4xl font-bold'>Projects</h1>
 
       {projects.map(project => (
         <div

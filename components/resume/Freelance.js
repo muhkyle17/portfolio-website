@@ -3,7 +3,7 @@ import { FiGithub } from 'react-icons/fi'
 const Freelance = ({ freelance }) => {
   return (
     <div className='flex flex-col gap-8 w-4/6'>
-      <h1 className='text-3xl'>Freelance</h1>
+      <h1 className='text-4xl font-semibold'>Freelance</h1>
 
       {freelance.map(work => (
         <div

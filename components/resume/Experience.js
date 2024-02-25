@@ -4,7 +4,7 @@ const Experience = ({ experience }) => {
   return (
     <div className='flex flex-col gap-8 w-4/6'>
       <div className='flex w-full justify-between items-center'>
-        <h1 className='text-3xl'>Experience</h1>
+        <h1 className='text-4xl font-semibold'>Experience</h1>
 
         <div className='flex gap-5'>
           <div className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center cursor-pointer justify-center rounded-full bg-primary hover:bg-transparent border-2 border-primary md:btn-lg duration-500 transition-all'>
