@@ -8,7 +8,7 @@ const Experience = ({ experience }) => {
 
         <div className='flex flex-wrap gap-5'>
           <div className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center cursor-pointer justify-center rounded-full bg-primary hover:bg-transparent border-2 border-primary md:btn-lg duration-500 transition-all'>
-            <Link download href='/MFOR_Resume.pdf' passHref>
+            <Link download href='/Mikyle_Resume.pdf' passHref>
               <a target='_blank' rel='noopener noreferrer'>
                 Download Resume
               </a>
