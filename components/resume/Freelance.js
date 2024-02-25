@@ -17,7 +17,7 @@ const Freelance = ({ freelance }) => {
                 href={work?.githubLink}
                 target='_blank'
                 rel='noreferrer'
-                className='pl-3 hover:text-primary'>
+                className='pl-3 hover:text-primary transition-all duration-500'>
                 <FiGithub />
               </a>
             </div>
