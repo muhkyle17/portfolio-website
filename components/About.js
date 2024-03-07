@@ -81,7 +81,7 @@ const About = () => {
   return (
     <>
       <section id='about' className='py-12 lg:py-[3.6rem]'>
-        <div className='container mx-auto flex items-center items-baseline// flex-wrap lg:flex-nowrap h-full gap-10'>
+        <div className='container mx-auto flex items-start flex-wrap lg:flex-nowrap h-full gap-10'>
           <div className='self-center w-[60%] xl:max-w-[23rem]'>
             <Image
               src={PictureOfMe2}
@@ -105,6 +105,28 @@ const About = () => {
             <p>
               I specialize in crafting user interfaces using modern web technologies, tying it
               together with backend technologies to create meaningful products.
+            </p>
+            <p>
+              Hi! I&lsquo;m Mikyle, a developer and investor from the Philippines, currently living
+              and working in Vancouver. My coding journey started early in university where I
+              discovered coding through my older sister! In 2021, I realized that coding was exactly
+              what I wanted to do in life. So I took the leap and decided to quit my job to learn
+              coding full-time.
+            </p>
+            <p>
+              Since then, I have been on an exciting journey of learning and creating, fueled by my
+              passion for design aesthetics and creative learning. What started out as a hobby
+              turned quickly into a passion of work and lifelong learning. In coding, I found a
+              perfect mix of designing, creating, and problem-solving.
+            </p>
+            <p>
+              When I&lsquo;m not coding, I&lsquo;m reading, working out, hiking, cooking, playing
+              football, scuba diving or going on outdoor adventures. Life is and always will be an
+              adventure!
+            </p>
+            <p className='pb-10 xl:pb-0'>
+              My current tech stack includes JavaScript, React.js, Next.js, TailwindCSS, and Ruby on
+              Rails. I am currently in the process of learning Python and Node.js.
             </p>
             <div className='flex flex-wrap gap-4'>
               <button
