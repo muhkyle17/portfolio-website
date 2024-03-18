@@ -82,14 +82,12 @@ const About = () => {
     <>
       <section id='about' className='py-12 lg:py-[3.6rem]'>
         <div className='container mx-auto flex items-center items-baseline// flex-wrap lg:flex-nowrap h-full gap-10'>
-          <div className='flex items-start justify-center w-full rounded-lg rounded-tl-[50px] rounded-br-[50px]'>
+          <div className='self-center w-[60%] xl:max-w-[23rem]'>
             <Image
-              src={PictureOfMe}
-              alt='Picture of me with background'
-              width={610}
-              height={400}
-              layout='intrinsic'
-              className='rounded-lg rounded-tl-[50px] rounded-br-[50px]'
+              src={PictureOfMe2}
+              alt='Picture of me in Modal'
+              layout='responsive'
+              className='rounded-xl'
             />
           </div>
           <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0 text-lg'>
