@@ -104,13 +104,13 @@ const About = () => {
               I specialize in crafting user interfaces using modern web technologies, tying it
               together with backend technologies to create meaningful products.
             </p>
-            <div className='flex flex-wrap gap-4'>
+            {/* <div className='flex flex-wrap gap-4'>
               <button
                 className='py-3 px-7 h-fit w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-full bg-primary border-2 border-primary hover:bg-transparent md:btn-lg transition-all'
                 onClick={() => setShowModal(true)}>
                 Learn more
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
