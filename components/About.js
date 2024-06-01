@@ -44,7 +44,7 @@ function Modal({ setShowModal }) {
               />
             </div>
             <div className='flex flex-col gap-6 xl:gap-7 self-center max-w-[60%] text-base'>
-              <h2 className='text-center font-semibold text-3xl sm:text-4xl'>About Me</h2>
+              <h2 className='text-center font-semibold text-3xl sm:text-4xl'>About</h2>
               <p>
                 Hi! I&lsquo;m Mikyle, a developer and investor from the Philippines, currently
                 living and working in Vancouver. My coding journey started early in university where
