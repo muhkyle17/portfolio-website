@@ -99,34 +99,32 @@ const About = () => {
             </div>
             <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
             <p>
-              I&lsquo;m a Fullstack Developer with a passion for creating beautiful applications and
-              websites.
+              I&lsquo;m a Fullstack Developer with a passion for creating beautiful and functional
+              applications and websites.
             </p>
             <p>
-              I specialize in crafting user interfaces using modern web technologies, tying it
-              together with backend technologies to create meaningful products.
+              I specialize in crafting user interfaces using modern web technologies and seamlessly
+              integrating them with backend systems to build meaningful products.
             </p>
             <p>
-              Hi! I&lsquo;m Mikyle, a developer and investor from the Philippines, currently living
-              and working in Vancouver. My coding journey started early in university where I
-              discovered coding through my older sister! In 2021, I realized that coding was exactly
-              what I wanted to do in life. So I took the leap and decided to quit my job to learn
-              coding full-time.
+              Currently based in Vancouver, my coding journey began in university, inspired by my
+              older sister. In 2021, I realized coding was my true calling. I took the leap and quit
+              my job to pursue coding full-time.
             </p>
             <p>
-              Since then, I have been on an exciting journey of learning and creating, fueled by my
-              passion for design aesthetics and creative learning. What started out as a hobby
-              turned quickly into a passion of work and lifelong learning. In coding, I found a
-              perfect mix of designing, creating, and problem-solving.
+              Since then, I&lsquo;m embarked on an exciting journey of learning and creating, driven
+              by my passion for design aesthetics and creative problem-solving. What began as a
+              hobby quickly evolved into a passion for work and lifelong learning. Coding has become
+              the perfect blend of designing, creating, and problem-solving for me.
             </p>
             <p>
-              When I&lsquo;m not coding, I&lsquo;m reading, working out, hiking, cooking, playing
-              football, scuba diving or going on outdoor adventures. Life is and always will be an
-              adventure!
+              When I&lsquo;m not coding, I enjoy reading, working out, hiking, cooking, playing
+              football, scuba diving, and going on outdoor adventures. Life is, and always will be,
+              an adventure!
             </p>
             <p className='pb-10 xl:pb-0'>
               My current tech stack includes JavaScript, React.js, Next.js, TailwindCSS, and Ruby on
-              Rails. I am currently in the process of learning Python and Node.js.
+              Rails. I&lsquo;m also in the process of learning Python and Node.js.
             </p>
             <div className='flex flex-wrap gap-4'>
               <button
