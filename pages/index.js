@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Header from '../components/common/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
-import Skills from '../components/Skills'
+import SkillsIcons from '../components/SkillsIcons'
 import PortfolioHome from '../components/Portfolio-Home'
 import Footer from '../components/common/Footer'
 
@@ -21,7 +21,7 @@ export default function Home() {
         <Header />
         <Hero />
         <PortfolioHome />
-        <Skills />
+        <SkillsIcons />
         <Footer />
       </div>
     </div>
