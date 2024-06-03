@@ -126,13 +126,13 @@ const About = () => {
               My current tech stack includes JavaScript, React.js, Next.js, Node.js, Express.js.
               I&lsquo;m also in the process of learning Python and React Native.
             </p>
-            <div className='flex flex-wrap gap-4'>
+            {/* <div className='flex flex-wrap gap-4'>
               <button
                 className='py-3 px-7 h-fit w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-full bg-primary border-2 border-primary hover:bg-transparent md:btn-lg transition-all'
                 onClick={() => setShowModal(true)}>
                 Learn more
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
