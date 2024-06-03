@@ -112,10 +112,10 @@ const About = () => {
               my job to pursue coding full-time.
             </p>
             <p>
-              Since then, I&lsquo;m embarked on an exciting journey of learning and creating, driven
-              by my passion for design aesthetics and creative problem-solving. What began as a
-              hobby quickly evolved into a passion for work and lifelong learning. Coding has become
-              the perfect blend of designing, creating, and problem-solving for me.
+              Since then, I&lsquo;ve embarked on an exciting journey of learning and creating,
+              driven by my passion for design aesthetics and creative problem-solving. What began as
+              a hobby quickly evolved into a passion for work and lifelong learning. Coding has
+              become the perfect blend of designing, creating, and problem-solving for me.
             </p>
             <p>
               When I&lsquo;m not coding, I enjoy reading, working out, hiking, cooking, playing
@@ -123,8 +123,8 @@ const About = () => {
               an adventure!
             </p>
             <p className='pb-10 xl:pb-0'>
-              My current tech stack includes JavaScript, React.js, Next.js, TailwindCSS, and Ruby on
-              Rails. I&lsquo;m also in the process of learning Python and Node.js.
+              My current tech stack includes JavaScript, React.js, Next.js, Node.js, Express.js.
+              I&lsquo;m also in the process of learning Python and React Native.
             </p>
             <div className='flex flex-wrap gap-4'>
               <button
