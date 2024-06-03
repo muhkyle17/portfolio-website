@@ -16,9 +16,7 @@ const AboutMePage = () => {
       <div className='mt-24 mb-[7.2rem]'>
         <About />
       </div>
-      <div className='absolute bottom-0 w-full'>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }
