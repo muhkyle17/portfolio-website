@@ -16,9 +16,9 @@ const AboutMePage = () => {
       <div className='mt-24'>
         <About />
       </div>
-      <div className='mt-24 mb-[7.2rem] bg-tertiary'>
+      {/* <div className='mt-24 mb-[7.2rem] bg-tertiary'>
         <Skills />
-      </div>
+      </div> */}
       <Footer />
     </div>
   )
