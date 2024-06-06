@@ -1,20 +1,12 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-// import icons
 import { XIcon } from '@heroicons/react/outline'
 import { MenuAlt3Icon } from '@heroicons/react/outline'
-
-// import navigation data
-import { navigation } from '../data'
-
-// import components
-import Social from './Social'
-
-// import framer
+import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 
-// import Link
-import { Link } from 'react-scroll'
+import { navigation } from '../data'
+import Social from './Social'
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false)
