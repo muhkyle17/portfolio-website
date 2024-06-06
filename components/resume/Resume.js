@@ -2,7 +2,7 @@ import {
   experience,
   resumeProjects as projects,
   freelance,
-  techSkills,
+  aboutSkillsTools,
   education,
 } from '../../data'
 import Experience from './Experience'
@@ -20,7 +20,7 @@ const Resume = () => {
         <Experience experience={experience} />
         <ResumeProjects projects={projects} />
         <Freelance freelance={freelance} />
-        <TechSkills techSkills={techSkills} />
+        <TechSkills aboutSkillsTools={aboutSkillsTools} />
         <Education education={education} />
       </div>
     </section>

@@ -119,15 +119,20 @@ export const skills = [
 
 export const aboutSkillsTools = [
   {
+    type: 'Languages',
+    skills: ['JavaScript', 'Python', 'Ruby'],
+  },
+  {
     type: 'Frontend',
     skills: [
       'HTML5',
-      'CSS3 / SCSS',
+      'CSS3',
       'SASS',
       'Tailwind CSS',
       'Apollo Client',
       'React Native',
-      'JavaScript / TypeScript',
+      'JavaScript',
+      'TypeScript',
       'React.js',
       'Next.js',
       'React Query',
@@ -147,14 +152,14 @@ export const aboutSkillsTools = [
       'GraphQL',
     ],
   },
-  {
-    type: 'Tools',
-    skill: ['VS Code', 'Git', 'GitHub', 'Canva'],
-  },
-  {
-    type: 'Languages',
-    skills: ['English (native)', 'Filipino (Fluent)'],
-  },
+  // {
+  //   type: 'Tools',
+  //   skills: ['VS Code', 'Git', 'GitHub', 'Canva'],
+  // },
+  // {
+  //   type: 'Languages',
+  //   skills: ['English (native)', 'Filipino (Fluent)'],
+  // },
 ]
 
 // projects
