@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { FiX } from 'react-icons/fi'
+import Link from 'next/link'
 
 // Import internals
 import PictureOfMe from '../public/CON_1265.jpg'
@@ -90,7 +91,7 @@ const About = () => {
               className='rounded-xl'
             />
           </div>
-          <div className='w-full flex flex-col gap-5 md:px-12 lg:px-0 text-lg'>
+          <div className='w-full flex flex-col gap-4 md:px-12 lg:px-0 text-base'>
             <div className='flex flex-row gap-3 text-7xl font-bold'>
               <h1 className=''>Hello, I&lsquo;m</h1>
               <h1 className='text-primary'>
@@ -122,10 +123,17 @@ const About = () => {
               football, scuba diving, and going on outdoor adventures. Life is, and always will be,
               an adventure!
             </p>
-            <p className='pb-10 xl:pb-0'>
+            <div className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center cursor-pointer justify-center rounded-full bg-primary hover:bg-transparent border-2 border-primary md:btn-lg duration-500 transition-all'>
+              <Link download href='/Mikyle_Resume.pdf' passHref>
+                <a target='_blank' rel='noopener noreferrer'>
+                  Download Resume
+                </a>
+              </Link>
+            </div>
+            {/* <p className='pb-10 xl:pb-0'>
               My current tech stack includes JavaScript, React.js, Next.js, Node.js, Express.js.
               I&lsquo;m also in the process of learning Python and React Native.
-            </p>
+            </p> */}
             {/* <div className='flex flex-wrap gap-4'>
               <button
                 className='py-3 px-7 h-fit w-fit text-sm sm:text-base font-medium text-white flex items-center justify-center rounded-full bg-primary border-2 border-primary hover:bg-transparent md:btn-lg transition-all'

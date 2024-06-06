@@ -117,6 +117,51 @@ export const skills = [
   },
 ]
 
+export const aboutSkillsTools = [
+  {
+    type: 'Languages',
+    skills: ['JavaScript', 'Python', 'Ruby'],
+  },
+  {
+    type: 'Frontend',
+    skills: [
+      'HTML5',
+      'CSS3',
+      'SASS',
+      'Tailwind CSS',
+      'Apollo Client',
+      'React Native',
+      'JavaScript',
+      'TypeScript',
+      'React.js',
+      'Next.js',
+      'React Query',
+    ],
+  },
+  {
+    type: 'Backend',
+    skills: [
+      'Express.js',
+      'Node.js',
+      'RESTful APIs',
+      'CRUD',
+      'MySQL',
+      'Prisma',
+      'PostgreSQL',
+      'Ruby on Rails',
+      'GraphQL',
+    ],
+  },
+  // {
+  //   type: 'Tools',
+  //   skills: ['VS Code', 'Git', 'GitHub', 'Canva'],
+  // },
+  // {
+  //   type: 'Languages',
+  //   skills: ['English (native)', 'Filipino (Fluent)'],
+  // },
+]
+
 // projects
 export const projects = [
   {

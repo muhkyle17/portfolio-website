@@ -1,3 +1,5 @@
+import { aboutSkillsTools } from '../../data'
+
 const TechSkills = ({ techSkills }) => {
   return (
     <div className='flex flex-col gap-8 w-4/6'>
@@ -5,19 +7,22 @@ const TechSkills = ({ techSkills }) => {
 
       <div className='flex gap-5 px-10 py-10 bg-transparent border-2 border-primary rounded-[45px]'>
         <div className='flex flex-col gap-5 w-[100%]'>
-          {techSkills.map(skill => (
-            <div key={Math.random()}>
-              <h3 className='font-bold'>
-                {skill.type}:{' '}
-                {skill.techStacks.map((stack, index) => (
-                  <span key={Math.random()} className='font-normal'>
-                    {stack}
-                    {index !== skill.techStacks.length - 1 ? ',' : ''}{' '}
-                  </span>
-                ))}
-              </h3>
-            </div>
-          ))}
+          {aboutSkillsTools.map(skill => {
+            console.log(skill, 'skill')
+            return (
+              <div key={Math.random()}>
+                <h3 className='font-bold'>
+                  {skill.type}:{' '}
+                  {skill.skills.map((stack, index) => (
+                    <span key={Math.random()} className='font-normal'>
+                      {stack}
+                      {index !== skill.skills.length - 1 ? ',' : ''}{' '}
+                    </span>
+                  ))}
+                </h3>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
