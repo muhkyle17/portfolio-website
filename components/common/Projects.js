@@ -1,7 +1,6 @@
-// Import externals
 import React from 'react'
 
-// Import internals
+// import ProjectOldDisplay from '../Project-Old-Display'
 import Project from '../Project'
 import { projects, projectsShortened } from '../../data'
 
