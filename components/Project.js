@@ -5,11 +5,11 @@ const Project = ({ title, image, techType, appType, skills, description, live, s
   console.log(techType, 'techType')
   console.log(appType, 'appType')
   return (
-    <div className='flex flex-col mb-10 border-2 border-primary rounded-t-xl rounded-3xl'>
+    <div className='flex flex-col mb-2 border-2 border-primary rounded-t-xl rounded-3xl cursor-pointer hover:ease-in transition-all duration-300'>
       <Image
         src={image}
         alt='Brew Lab Project'
-        width='380'
+        width='360'
         height='200'
         layout='intrinsic'
         className='rounded-t-xl'
