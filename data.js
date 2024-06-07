@@ -166,6 +166,8 @@ export const aboutSkillsTools = [
 export const projects = [
   {
     title: 'Brew Lab PH',
+    techType: 'Frontend Development',
+    appType: 'Responsive Website',
     image: BrewLab,
     description:
       'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',
@@ -173,17 +175,21 @@ export const projects = [
     live: 'https://muhkyle17.github.io/brewlabph/',
     source: 'https://github.com/muhkyle17/brewlabph',
   },
-  {
-    title: 'Instox',
-    image: Instox,
-    description:
-      'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
-    skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
-    live: 'https://instox.herokuapp.com/',
-    source: 'https://github.com/bananakiu/stock-trading-app',
-  },
+  // {
+  //   title: 'Instox',
+  //   techType: 'Frontend Development',
+  //   appType: 'Responsive Website',
+  //   image: Instox,
+  //   description:
+  //     'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
+  //   skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
+  //   live: 'https://instox.herokuapp.com/',
+  //   source: 'https://github.com/bananakiu/stock-trading-app',
+  // },
   {
     title: 'Github Finder',
+    techType: 'Frontend Development',
+    appType: 'Responsive Website',
     image: GithubFinder,
     description: `An app that allows you to search for github repositories that maximizes usage of the Github API. Upon searching a github user, you can view the user's profile that an in depth description of the user's github profile along with their latest repositories. You can then click a link that leads you straight to the user's actual github profile.`,
     skills: ['HTML', 'CSS', 'Reactjs'],
@@ -192,6 +198,8 @@ export const projects = [
   },
   {
     title: 'Natours',
+    techType: 'Frontend Development',
+    appType: 'Responsive Website',
     image: Natours,
     description:
       'To further practice my knowledge in CSS, I used SCSS to build a simple yet elegant website that showcases an online service to book tours for the outdoor scenery. Although not an actual app, this website showcases beautiful animations and aesthetic components to showcase my CSS skills.',
@@ -201,6 +209,8 @@ export const projects = [
   },
   {
     title: 'Omnifood',
+    techType: 'Frontend Development',
+    appType: 'Responsive Website',
     image: Omnifood,
     description:
       'Starting out coding with HTML & CSS, I coded this beautiful website that show cases Omnifood - A non-existent company that deliveries delicious yet healthy food right at your doorstep. For those who have no time for cooking yet want healthy tasty food, this is for you.',
@@ -210,6 +220,8 @@ export const projects = [
   },
   {
     title: 'Tic Tac Toe',
+    techType: 'Frontend Development',
+    appType: 'Responsive Website',
     image: TicTacToe,
     description:
       'My first stint at using JavaScript, I coded a Tic Tac Toe game using HTML, CSS & JavaScript. The logic was not easy, yet it was worth it in the end because of the knowledge I gained with just using Vanilla JavaScript.',
@@ -219,6 +231,8 @@ export const projects = [
   },
   {
     title: 'Web Dev Portfolio',
+    techType: 'Frontend Development',
+    appType: 'Responsive Website',
     image: WebDevPortfolio,
     description:
       'You know what they say - practice makes progress. Coded with just HTML and CSS, a simple yet pleasing portfolio website to continuously brush up on skills that should never be neglected.',

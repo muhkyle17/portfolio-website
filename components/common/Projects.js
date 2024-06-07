@@ -6,13 +6,15 @@ import { projects, projectsShortened } from '../../data'
 
 const Projects = ({ shortened }) => {
   return (
-    <div className='gap-12 lg:justify-between flex flex-wrap justify-center items-baseline'>
+    <div className='flex flex-wrap gap-4 justify-center xl:justify-between items-baseline'>
       {(shortened ? projectsShortened : projects).map((item, index) => {
         return (
           <Project
             key={index}
             title={item.title}
             image={item.image}
+            techType={item.techType}
+            appType={item.appType}
             description={item.description}
             skills={item.skills}
             live={item.live}
