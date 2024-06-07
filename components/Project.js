@@ -1,10 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Project = ({ title, image, skills, description, live, source }) => {
+const Project = ({ title, image, techType, appType, skills, description, live, source }) => {
+  console.log(techType, 'techType')
+  console.log(appType, 'appType')
   return (
-    <div>
-      <p>hi</p>
+    <div className='flex flex-col mb-10 border-2 border-primary rounded-t-xl rounded-3xl'>
+      <Image
+        src={image}
+        alt='Brew Lab Project'
+        width='380'
+        height='200'
+        layout='intrinsic'
+        className='rounded-t-xl'
+      />
+      <div className='flex flex-col py-5 px-7 bg-transparent'>
+        <p className='text-3xl text-primary'>{title}</p>
+        <p className='mt-4 text-base font-semibold'>{techType}</p>
+        <p className='text-base font-semibold'>{appType}</p>
+      </div>
     </div>
   )
 }
