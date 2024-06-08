@@ -2,8 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 const Project = ({ title, image, techType, appType, skills, description, live, source }) => {
-  console.log(techType, 'techType')
-  console.log(appType, 'appType')
   return (
     <div className='flex flex-col mb-2 border-2 border-primary rounded-t-xl// rounded-2xl cursor-pointer hover:ease-in transition-all duration-300'>
       <Image

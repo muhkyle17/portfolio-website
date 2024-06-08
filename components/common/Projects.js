@@ -6,7 +6,7 @@ import { projects, projectsShortened } from '../../data'
 
 const Projects = ({ shortened }) => {
   return (
-    <div className='flex flex-wrap gap-10 justify-center xl:justify-between items-baseline'>
+    <div className='flex flex-wrap gap-10 justify-around lg:justify-between xl:justify-center items-baseline'>
       {(shortened ? projectsShortened : projects).map((item, index) => {
         return (
           <Project
