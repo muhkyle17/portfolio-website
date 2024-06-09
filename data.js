@@ -166,8 +166,9 @@ export const aboutSkillsTools = [
 export const projects = [
   {
     title: 'Brew Lab PH',
+    projectRoute: 'brewlabph',
     techType: 'Frontend Development',
-    appType: 'Responsive Website',
+    appType: 'Freelance Project',
     image: BrewLab,
     description:
       'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',
@@ -188,6 +189,7 @@ export const projects = [
   // },
   {
     title: 'Github Finder',
+    projectRoute: 'github-finder',
     techType: 'Frontend Development',
     appType: 'Responsive Website',
     image: GithubFinder,
@@ -198,6 +200,7 @@ export const projects = [
   },
   {
     title: 'Natours',
+    projectRoute: 'natours',
     techType: 'Frontend Development',
     appType: 'Responsive Website',
     image: Natours,
@@ -209,6 +212,7 @@ export const projects = [
   },
   {
     title: 'Omnifood',
+    projectRoute: 'omnifood',
     techType: 'Frontend Development',
     appType: 'Responsive Website',
     image: Omnifood,
@@ -220,6 +224,7 @@ export const projects = [
   },
   {
     title: 'Tic Tac Toe',
+    projectRoute: 'tictactoe',
     techType: 'Frontend Development',
     appType: 'Responsive Website',
     image: TicTacToe,
@@ -231,6 +236,7 @@ export const projects = [
   },
   {
     title: 'Web Dev Portfolio',
+    projectRoute: 'web-dev-portfolio',
     techType: 'Frontend Development',
     appType: 'Responsive Website',
     image: WebDevPortfolio,
