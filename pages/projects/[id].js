@@ -1,7 +1,11 @@
+import { useRouter } from 'next/router'
+
 const project = () => {
+  const router = useRouter()
+
   return (
     <div>
-      <p>Project page</p>
+      <p>{router.query.id}</p>
     </div>
   )
 }
