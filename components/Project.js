@@ -1,14 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const Project = ({ title, image, techType, appType, skills, description, live, source }) => {
   return (
-    <div className='flex flex-col mb-2 border-2 border-primary rounded-t-xl// rounded-2xl cursor-pointer hover:ease-in transition-all duration-300'>
+    <motion.div
+      className='box flex flex-col mb-2 border-2 border-primary rounded-t-xl// rounded-2xl cursor-pointer hover:ease-in transition-all duration-300'
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: 'spring', stiffness: 500, damping: 1 }}>
       <Image
         src={image}
         alt='Brew Lab Project'
         width='360'
-        height='200'
+        height='180'
         layout='intrinsic'
         className='rounded-t-2xl'
       />
@@ -17,7 +21,7 @@ const Project = ({ title, image, techType, appType, skills, description, live, s
         <p className='mt-4 text-base font-semibold'>{techType}</p>
         <p className='text-base font-semibold'>{appType}</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
