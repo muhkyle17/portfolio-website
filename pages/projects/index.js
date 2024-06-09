@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Header from '../components/common/Header'
-import Footer from '../components/common/Footer'
-import Portfolio from '../components/Portfolio'
+import Header from '../../components/common/Header'
+import Footer from '../../components/common/Footer'
+import Portfolio from '../../components/Portfolio'
 
 const ProjectsPage = () => {
   return (
