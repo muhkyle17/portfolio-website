@@ -1,9 +1,10 @@
 import Head from 'next/head'
+
 import Header from '../../components/common/Header'
 import Footer from '../../components/common/Footer'
-import Portfolio from '../../components/Portfolio'
+import Portfolio from '../../components/projects/Portfolio'
 
-const ProjectsPage = () => {
+const projects = () => {
   return (
     <>
       <Head>
@@ -23,4 +24,4 @@ const ProjectsPage = () => {
   )
 }
 
-export default ProjectsPage
+export default projects
