@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import Head from 'next/head'
 
 import Header from '../../components/common/Header'
@@ -6,8 +5,6 @@ import Footer from '../../components/common/Footer'
 import Project from '../../components/projects/Project'
 
 const project = () => {
-  const router = useRouter()
-
   return (
     <>
       <Head>
