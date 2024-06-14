@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Projects from './common/Projects'
+import Projects from './Projects'
 
 const Portfolio = () => {
   return (

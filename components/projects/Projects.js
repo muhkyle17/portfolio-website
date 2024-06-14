@@ -1,7 +1,7 @@
 import React from 'react'
 
 // import ProjectOldDisplay from '../Project-Old-Display'
-import Project from '../Project'
+import ProjectCard from './ProjectCard'
 import { projects, projectsShortened } from '../../data'
 
 const Projects = ({ shortened }) => {
@@ -10,7 +10,7 @@ const Projects = ({ shortened }) => {
       {(shortened ? projectsShortened : projects).map((item, index) => {
         console.log(item, 'item')
         return (
-          <Project
+          <ProjectCard
             key={index}
             title={item.title}
             projectRoute={item.projectRoute}
