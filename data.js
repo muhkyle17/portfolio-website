@@ -168,7 +168,9 @@ export const projects = [
     title: 'Brew Lab PH',
     projectRoute: 'brewlabph',
     techType: 'Frontend Development',
-    appType: 'Freelance Project',
+    projectType: 'Freelance Project',
+    appType: 'Web Application',
+    duration: 'May 2021 - Jan 2022',
     image: BrewLab,
     description:
       'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',

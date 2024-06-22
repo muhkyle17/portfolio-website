@@ -8,7 +8,18 @@ const Project = () => {
   const router = useRouter()
 
   const projectInfo = projects.find(project => project.projectRoute === router.query.id)
-  const { title, techType, appType, image, description, skills, live, source } = projectInfo || {}
+  const {
+    title,
+    techType,
+    appType,
+    projectType,
+    duration,
+    image,
+    description,
+    skills,
+    live,
+    source,
+  } = projectInfo || {}
 
   if (projectInfo === undefined)
     return (
@@ -18,8 +29,17 @@ const Project = () => {
     )
 
   return (
-    <div className='container mx-auto px-auto px-48'>
-      <h1 className='text-4xl'>{title}</h1>
+    <div className='container mx-auto px-auto px-72 flex flex-col gap-5 items-start'>
+      <h1 className='text-5xl text-primary'>[ {title} ]</h1>
+
+      <div>
+        <p>
+          {techType}, {appType}
+        </p>
+        <p>
+          {projectType} | {duration}
+        </p>
+      </div>
 
       <Image
         src={image}
