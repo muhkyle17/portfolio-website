@@ -29,7 +29,7 @@ const Project = () => {
     )
 
   return (
-    <div className='container mx-auto px-auto px-72 flex flex-col gap-5 items-start'>
+    <div className='container mx-auto px-auto xl:px-72 flex flex-col gap-5 items-start'>
       <h1 className='text-5xl text-primary'>[ {title} ]</h1>
 
       <div>
@@ -41,12 +41,12 @@ const Project = () => {
         </p>
       </div>
 
-      <div className='imageContainer'>
+      <div className='self-start relative w-full h-[30vh] sm:h-[50vh] 2xl:h-[35rem]'>
         <Image src={image} alt={title} layout='fill' objectFit='contain' />
       </div>
       <p>{description}</p>
-      <div className='mt-5'>{skills}</div>
-      <div className='mt-5'>
+      <div>{skills}</div>
+      <div>
         <a>{live}</a>
         <a>{source}</a>
       </div>
