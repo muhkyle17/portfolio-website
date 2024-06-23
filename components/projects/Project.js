@@ -41,18 +41,12 @@ const Project = () => {
         </p>
       </div>
 
-      <Image
-        src={image}
-        alt={title}
-        width='650'
-        height='380'
-        layout='intrinsic'
-        className='rounded-t-2xl'
-        priority
-      />
+      <div className='imageContainer'>
+        <Image src={image} alt={title} layout='fill' objectFit='contain' />
+      </div>
       <p>{description}</p>
-      <div>{skills}</div>
-      <div>
+      <div className='mt-5'>{skills}</div>
+      <div className='mt-5'>
         <a>{live}</a>
         <a>{source}</a>
       </div>

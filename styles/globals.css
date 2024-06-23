@@ -47,3 +47,16 @@ h1 {
     @apply bg-red-200;
   }
 } */
+
+.imageContainer {
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  aspect-ratio: 3 / 2; /* Optional aspect ratio to maintain */
+}
+
+.imageContainer::before {
+  content: '';
+  display: block;
+  padding-top: 66.67%;
+}
