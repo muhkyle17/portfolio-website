@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 
-import Projects from './common/Projects'
+import Projects from '../components/projects/Projects'
 
 const PortfolioHome = () => {
   const router = useRouter()
