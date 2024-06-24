@@ -59,13 +59,15 @@ const Project = () => {
       </div>
       <p>{description}</p>
       <div className='flex gap-3 sm:gap-5'>
-        <a
-          href={live}
-          target='_blank'
-          rel='noreferrer'
-          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
-          Live
-        </a>
+        {live && (
+          <a
+            href={live}
+            target='_blank'
+            rel='noreferrer'
+            className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
+            Live
+          </a>
+        )}
         <a
           href={source}
           target='_blank'
