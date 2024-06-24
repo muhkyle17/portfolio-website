@@ -178,17 +178,20 @@ export const projects = [
     live: 'https://muhkyle17.github.io/brewlabph/',
     source: 'https://github.com/muhkyle17/brewlabph',
   },
-  // {
-  //   title: 'Instox',
-  //   techType: 'Frontend Development',
-  //   appType: 'Responsive Website',
-  //   image: Instox,
-  //   description:
-  //     'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
-  //   skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
-  //   live: 'https://instox.herokuapp.com/',
-  //   source: 'https://github.com/bananakiu/stock-trading-app',
-  // },
+  {
+    title: 'Instox',
+    projectRoute: 'instox',
+    techType: 'Full Stack Development',
+    projectType: 'Bootcamp Project',
+    appType: 'Responsive Website',
+    duration: 'September 2021',
+    image: Instox,
+    description:
+      'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
+    skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
+    // live: 'https://instox.herokuapp.com/',
+    source: 'https://github.com/bananakiu/stock-trading-app',
+  },
   {
     title: 'Github Finder',
     projectRoute: 'github-finder',
