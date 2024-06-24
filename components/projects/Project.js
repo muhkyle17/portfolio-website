@@ -29,17 +29,19 @@ const Project = () => {
     )
 
   return (
-    <div className='container mx-auto px-auto xl:px-72 flex flex-col gap-5 items-start'>
-      <h1 className='text-5xl text-primary'>[ {title} ]</h1>
+    <div className='container mx-auto px-auto xl:px-72 flex flex-col gap-2 sm:gap-5 items-start'>
+      <h1 className='text-4xl sm:text-5xl text-primary'>[ {title} ]</h1>
 
       <div className='flex flex-col'>
         <h1 className='text-2xl'>
           {techType}, {appType}
         </h1>
-        <h1 className='text-lg flex flex-row items-center gap-2'>
-          {projectType} <span className='text-3xl'>·</span> {duration}
-        </h1>
-        <div className='mt-3 flex gap-3'>
+        <div className='text-lg flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-2'>
+          <h1>{projectType}</h1>
+          <p className='text-3xl hidden sm:block'>·</p>
+          <h1>{duration}</h1>
+        </div>
+        <div className='mt-3 flex flex-wrap gap-3'>
           {skills.map((item, index) => {
             return (
               <p
@@ -56,7 +58,7 @@ const Project = () => {
         <Image src={image} alt={title} layout='fill' objectFit='contain' />
       </div>
       <p>{description}</p>
-      <div className='flex gap-5'>
+      <div className='flex gap-3 sm:gap-5'>
         <a
           href={live}
           target='_blank'
