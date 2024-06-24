@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Header from '../components/common/Header'
-import Footer from '../components/common/Footer'
-import Portfolio from '../components/Portfolio'
 
-const ProjectsPage = () => {
+import Header from '../../components/common/Header'
+import Footer from '../../components/common/Footer'
+import Project from '../../components/projects/Project'
+
+const project = () => {
   return (
     <>
       <Head>
@@ -14,8 +15,8 @@ const ProjectsPage = () => {
 
       <div className='relative'>
         <Header />
-        <div className='mt-24 mb-10'>
-          <Portfolio />
+        <div className='mt-32 mb-10'>
+          <Project />
         </div>
         <Footer />
       </div>
@@ -23,4 +24,4 @@ const ProjectsPage = () => {
   )
 }
 
-export default ProjectsPage
+export default project

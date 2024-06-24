@@ -166,6 +166,11 @@ export const aboutSkillsTools = [
 export const projects = [
   {
     title: 'Brew Lab PH',
+    projectRoute: 'brewlabph',
+    techType: 'Frontend Development',
+    projectType: 'Freelance Project',
+    appType: 'Web Application',
+    duration: 'May 2021 - Jan 2022',
     image: BrewLab,
     description:
       'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',
@@ -175,15 +180,25 @@ export const projects = [
   },
   {
     title: 'Instox',
+    projectRoute: 'instox',
+    techType: 'Full Stack Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'September 2021',
     image: Instox,
     description:
       'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
     skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
-    live: 'https://instox.herokuapp.com/',
+    // live: 'https://instox.herokuapp.com/',
     source: 'https://github.com/bananakiu/stock-trading-app',
   },
   {
     title: 'Github Finder',
+    projectRoute: 'github-finder',
+    techType: 'Frontend Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'August 2021',
     image: GithubFinder,
     description: `An app that allows you to search for github repositories that maximizes usage of the Github API. Upon searching a github user, you can view the user's profile that an in depth description of the user's github profile along with their latest repositories. You can then click a link that leads you straight to the user's actual github profile.`,
     skills: ['HTML', 'CSS', 'Reactjs'],
@@ -192,6 +207,11 @@ export const projects = [
   },
   {
     title: 'Natours',
+    projectRoute: 'natours',
+    techType: 'Frontend Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'February 2021',
     image: Natours,
     description:
       'To further practice my knowledge in CSS, I used SCSS to build a simple yet elegant website that showcases an online service to book tours for the outdoor scenery. Although not an actual app, this website showcases beautiful animations and aesthetic components to showcase my CSS skills.',
@@ -201,6 +221,11 @@ export const projects = [
   },
   {
     title: 'Omnifood',
+    projectRoute: 'omnifood',
+    techType: 'Frontend Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'July 2020',
     image: Omnifood,
     description:
       'Starting out coding with HTML & CSS, I coded this beautiful website that show cases Omnifood - A non-existent company that deliveries delicious yet healthy food right at your doorstep. For those who have no time for cooking yet want healthy tasty food, this is for you.',
@@ -210,6 +235,11 @@ export const projects = [
   },
   {
     title: 'Tic Tac Toe',
+    projectRoute: 'tictactoe',
+    techType: 'Frontend Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'July 2021',
     image: TicTacToe,
     description:
       'My first stint at using JavaScript, I coded a Tic Tac Toe game using HTML, CSS & JavaScript. The logic was not easy, yet it was worth it in the end because of the knowledge I gained with just using Vanilla JavaScript.',
@@ -219,6 +249,11 @@ export const projects = [
   },
   {
     title: 'Web Dev Portfolio',
+    projectRoute: 'web-dev-portfolio',
+    techType: 'Frontend Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'December 2021',
     image: WebDevPortfolio,
     description:
       'You know what they say - practice makes progress. Coded with just HTML and CSS, a simple yet pleasing portfolio website to continuously brush up on skills that should never be neglected.',
@@ -231,6 +266,11 @@ export const projects = [
 export const projectsShortened = [
   {
     title: 'Brew Lab PH',
+    projectRoute: 'brewlabph',
+    techType: 'Frontend Development',
+    projectType: 'Freelance Project',
+    appType: 'Web Application',
+    duration: 'May 2021 - Jan 2022',
     image: BrewLab,
     description:
       'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',
@@ -240,15 +280,25 @@ export const projectsShortened = [
   },
   {
     title: 'Instox',
+    projectRoute: 'instox',
+    techType: 'Full Stack Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'September 2021',
     image: Instox,
     description:
       'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
     skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
-    live: 'https://instox.herokuapp.com/',
+    // live: 'https://instox.herokuapp.com/',
     source: 'https://github.com/bananakiu/stock-trading-app',
   },
   {
     title: 'Github Finder',
+    projectRoute: 'github-finder',
+    techType: 'Frontend Development',
+    projectType: 'Passion Project',
+    appType: 'Responsive Website',
+    duration: 'August 2021',
     image: GithubFinder,
     description: `An app that allows you to search for github repositories that maximizes usage of the Github API. Upon searching a github user, you can view the user's profile that an in depth description of the user's github profile along with their latest repositories. You can then click a link that leads you straight to the user's actual github profile.`,
     skills: ['HTML', 'CSS', 'Reactjs'],

@@ -1,10 +1,7 @@
-// Import externals
 import React from 'react'
 import Image from 'next/image'
 
-// Import internals
-
-const Project = ({ title, image, skills, description, live, source }) => {
+const ProjectOldDisplay = ({ title, image, skills, description, live, source }) => {
   return (
     <div className='flex flex-col items-center justify-center gap-3 w-[22rem]'>
       <p className='text-2xl font-semibold'>{title}</p>
@@ -48,4 +45,4 @@ const Project = ({ title, image, skills, description, live, source }) => {
   )
 }
 
-export default Project
+export default ProjectOldDisplay
