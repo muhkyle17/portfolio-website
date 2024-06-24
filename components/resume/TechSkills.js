@@ -8,7 +8,6 @@ const TechSkills = ({ techSkills }) => {
       <div className='flex gap-5 px-10 py-10 bg-transparent border-2 border-primary rounded-[45px]'>
         <div className='flex flex-col gap-5 w-[100%]'>
           {aboutSkillsTools.map(skill => {
-            console.log(skill, 'skill')
             return (
               <div key={Math.random()}>
                 <h3 className='font-bold'>

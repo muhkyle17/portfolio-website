@@ -8,7 +8,6 @@ const Projects = ({ shortened }) => {
   return (
     <div className='flex flex-wrap gap-10 justify-around lg:justify-between xl:justify-center items-baseline'>
       {(shortened ? projectsShortened : projects).map((item, index) => {
-        console.log(item, 'item')
         return (
           <ProjectCard
             key={index}
