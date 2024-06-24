@@ -15,7 +15,7 @@ const project = () => {
 
       <div className='relative'>
         <Header />
-        <div className='mt-24 mb-10'>
+        <div className='mt-32 mb-10'>
           <Project />
         </div>
         <Footer />
