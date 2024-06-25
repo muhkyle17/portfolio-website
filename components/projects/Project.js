@@ -69,13 +69,15 @@ const Project = () => {
             Live
           </a>
         )}
-        <a
-          href={source}
-          target='_blank'
-          rel='noreferrer'
-          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
-          Source
-        </a>
+        {source && (
+          <a
+            href={source}
+            target='_blank'
+            rel='noreferrer'
+            className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
+            Source
+          </a>
+        )}
       </div>
     </div>
   )

@@ -166,6 +166,19 @@ export const aboutSkillsTools = [
 // projects
 export const projects = [
   {
+    title: 'Creator Affiliate Program',
+    projectRoute: 'creator-affiliate',
+    techType: 'Full Stack Development',
+    projectType: 'Developer Project',
+    appType: 'Web Application',
+    duration: 'January 2022 - July 2022',
+    image: Ngs,
+    description: '',
+    skills: ['React.js', 'Ant Design', 'React Query', 'Express.js', 'API'],
+    live: null,
+    live: null,
+  },
+  {
     title: 'North Graphic Supplies',
     projectRoute: 'ngs',
     techType: 'Frontend Development',
