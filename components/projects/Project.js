@@ -54,11 +54,17 @@ const Project = () => {
         </div>
       </div>
 
-      <div className='self-start relative w-full h-[30vh] sm:h-[50vh] 2xl:h-[35rem]'>
-        <Image src={image} alt={title} layout='fill' objectFit='contain' />
+      <div className='self-start relative w-full h-[30vh] sm:h-[50vh] 2xl:h-[40rem] flex flex-col items-start justify-start'>
+        <Image
+          src={image}
+          alt={title}
+          layout='fill'
+          objectFit='contain'
+          className='self-start justify-self-start'
+        />
       </div>
       <p>{description}</p>
-      <div className='flex gap-3 sm:gap-5'>
+      <div className='flex gap-3 self-center sm:gap-5'>
         {live && (
           <a
             href={live}
