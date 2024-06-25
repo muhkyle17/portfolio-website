@@ -1,12 +1,10 @@
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-
 import { projects } from '../../data'
 import spinner from '../../public/spinner.gif'
 
 const Project = () => {
   const router = useRouter()
-
   const projectInfo = projects.find(project => project.projectRoute === router.query.id)
   const {
     title,
@@ -29,7 +27,7 @@ const Project = () => {
     )
 
   return (
-    <div className='container mx-auto px-auto xl:px-72 flex flex-col gap-2 sm:gap-5 items-start'>
+    <div className='container mx-auto px-4 xl:px-72 flex flex-col gap-2 sm:gap-5 items-start'>
       <h1 className='text-4xl sm:text-5xl text-primary'>[ {title} ]</h1>
 
       <div className='flex flex-col'>
@@ -54,9 +52,12 @@ const Project = () => {
         </div>
       </div>
 
-      <div className='relative h-[30vh] sm:h-[50vh] 2xl:h-[40rem] w-full lg:w-[75%] xl:w-full flex items-start justify-start'>
-        <Image src={image} alt={title} layout='fill' objectFit='contain' />
+      <div className='relative w-full lg:w-[75%] xl:w-full'>
+        <div className='relative w-full' style={{ paddingTop: '56.25%' }}>
+          <Image src={image} alt={title} layout='fill' objectFit='cover' />
+        </div>
       </div>
+
       <p>{description}</p>
       <div className='flex gap-3 self-center sm:gap-5'>
         {live && (
@@ -64,7 +65,7 @@ const Project = () => {
             href={live}
             target='_blank'
             rel='noreferrer'
-            className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
+            className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
             Live
           </a>
         )}
@@ -72,7 +73,7 @@ const Project = () => {
           href={source}
           target='_blank'
           rel='noreferrer'
-          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-600 duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
+          className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
           Source
         </a>
       </div>
