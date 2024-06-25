@@ -24,14 +24,17 @@ const ProjectCard = ({
       transition={{ type: 'spring', stiffness: 500, damping: 1 }}>
       <Image
         src={image}
-        alt='Brew Lab Project'
+        alt={`${title} Picture`}
         width='360'
         height='180'
         layout='intrinsic'
         className='rounded-t-2xl'
       />
       <div className='flex flex-col py-5 px-7 bg-transparent'>
-        <p className='text-3xl text-primary'>{title}</p>
+        {/* //TODO: Find a more sustainable way of making the font size here smaller */}
+        <p className={`${projectRoute === 'ngs' ? 'text-2xl' : 'text-3xl'} text-primary `}>
+          {title}
+        </p>
         <p className='mt-4 text-base font-semibold'>{techType}</p>
         <p className='text-base font-semibold'>{appType}</p>
       </div>

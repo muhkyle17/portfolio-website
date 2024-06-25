@@ -33,6 +33,7 @@ import Instox from './public/projects/instox.png'
 import TicTacToe from './public/projects/tic-tac-toe.png'
 import WebDevPortfolio from './public/projects/web-dev-portfolio.png'
 import GithubFinder from './public/projects/github-finder.png'
+import Ngs from './public/projects/ngs.png'
 
 export const navigation = [
   {
@@ -165,6 +166,19 @@ export const aboutSkillsTools = [
 // projects
 export const projects = [
   {
+    title: 'North Graphic Supplies',
+    projectRoute: 'ngs',
+    techType: 'Frontend Development',
+    projectType: 'Freelance Project',
+    appType: 'Web Application',
+    duration: 'January 2022 - February 2022',
+    image: Ngs,
+    description: `North Graphic, based in Davao, Philippines, specializes in creating and printing high-quality labels using state-of-the-art equipment. I developed their website from scratch using Next.js and TailwindCSS, leveraging my expertise in Next.js to implement an efficient routing system and optimize images for better performance. This project allowed me to apply my knowledge of UI/UX design to create a visually appealing and highly functional website that meets the company's specific needs.`,
+    skills: ['Next.js', 'TailwindCSS'],
+    live: 'https://aj-printing-website-2rz6nbwot-muhkyle17s-projects.vercel.app/',
+    source: 'https://github.com/muhkyle17/aj-printing-website',
+  },
+  {
     title: 'Brew Lab PH',
     projectRoute: 'brewlabph',
     techType: 'Frontend Development',
@@ -188,7 +202,7 @@ export const projects = [
     image: Instox,
     description:
       'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
-    skills: ['HTML', 'Ruby on Rails', 'Tailwind CSS'],
+    skills: ['Ruby on Rails', 'Tailwind CSS'],
     // live: 'https://instox.herokuapp.com/',
     source: 'https://github.com/bananakiu/stock-trading-app',
   },
@@ -201,7 +215,7 @@ export const projects = [
     duration: 'August 2021',
     image: GithubFinder,
     description: `An app that allows you to search for github repositories that maximizes usage of the Github API. Upon searching a github user, you can view the user's profile that an in depth description of the user's github profile along with their latest repositories. You can then click a link that leads you straight to the user's actual github profile.`,
-    skills: ['HTML', 'CSS', 'Reactjs'],
+    skills: ['Reactjs', 'API'],
     live: 'https://github-finder-v8rdja29g-muhkyle17.vercel.app/',
     source: 'https://github.com/muhkyle17/github-finder',
   },
