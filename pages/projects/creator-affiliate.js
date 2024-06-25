@@ -15,7 +15,7 @@ const CreatorAffiliate = () => {
 
       <div className='relative'>
         <Header />
-        <div className='mt-28 mb-10'>
+        <div className='mt-32 mb-10'>
           <AffiliateProject />
         </div>
         <Footer />

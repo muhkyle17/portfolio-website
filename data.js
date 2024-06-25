@@ -34,6 +34,7 @@ import TicTacToe from './public/projects/tic-tac-toe.png'
 import WebDevPortfolio from './public/projects/web-dev-portfolio.png'
 import GithubFinder from './public/projects/github-finder.png'
 import Ngs from './public/projects/ngs.png'
+import AffiliateProgram from './public/projects/affiliate-brand-creator-view.png'
 
 export const navigation = [
   {
@@ -172,8 +173,8 @@ export const projects = [
     projectType: 'Developer Project',
     appType: 'Web Application',
     duration: 'January 2022 - July 2022',
-    image: Ngs,
-    description: '',
+    image: AffiliateProgram,
+    description: `The Creator Affiliate Program is the official in-house affiliate initiative by Creator.co. Alongside the guidance of my manager Alex Quast, I spearheaded this project to enable Creator.co's brand users to develop affiliate campaigns, and allow influencers to produce campaign posts with affiliate links. These links can track clicks, sales, and revenue, providing comprehensive analytics for each affiliate. This serves as the main affiliate program of Creator.co, in addition to utilizing Awin, Rakuten, ShareASale, and Impact Radius' affiliate programs.`,
     skills: ['React.js', 'Ant Design', 'React Query', 'Express.js', 'API'],
     live: null,
     live: null,
