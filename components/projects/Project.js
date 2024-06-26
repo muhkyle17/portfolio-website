@@ -44,7 +44,7 @@ const Project = () => {
             return (
               <p
                 key={index}
-                className='bg-primary text-center flex items-center justify-center rounded-full py-[0.4rem] px-4 text-xs sm:text-sm'>
+                className='bg-transparent border-2 border-primary  text-center flex items-center justify-center rounded-full py-[0.4rem] px-4 text-xs sm:text-sm'>
                 {item}
               </p>
             )
@@ -65,7 +65,7 @@ const Project = () => {
             href={live}
             target='_blank'
             rel='noreferrer'
-            className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
+            className='bg-primary border-2 border-primary hover:bg-transparent hover:border-primary transition-all duration-500 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
             Live
           </a>
         )}
@@ -74,7 +74,7 @@ const Project = () => {
             href={source}
             target='_blank'
             rel='noreferrer'
-            className='bg-transparent border-2 border-primary hover:bg-primary hover:border-primary transition-all duration-300 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
+            className='bg-primary border-2 border-primary hover:bg-transparent hover:border-primary transition-all duration-500 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
             Source
           </a>
         )}

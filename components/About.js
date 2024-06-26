@@ -32,7 +32,7 @@ function Modal({ setShowModal }) {
           className='w-[85%] max-h-[40rem] text-center xl:text-left bg-[#232323] rounded-lg py-16 sm:px-12 overflow-auto relative'
           onClick={e => e.stopPropagation()}>
           <FiX
-            className='absolute top-4 right-5 text-2xl cursor-pointer hover:text-primary transition-all duration-300'
+            className='absolute top-4 right-5 text-2xl cursor-pointer hover:text-primary transition-all duration-500'
             onClick={() => setShowModal(false)}
           />
           <div className='flex justify-center flex-wrap xl:flex-nowrap gap-8 h-[30rem]'>

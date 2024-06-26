@@ -18,7 +18,7 @@ const ProjectCard = ({
 
   return (
     <motion.div
-      className='box flex flex-col mb-2 border-2 border-primary rounded-t-xl// rounded-2xl cursor-pointer hover:ease-in transition-all duration-300'
+      className='box flex flex-col mb-2 border-2 border-primary rounded-t-xl// rounded-2xl cursor-pointer hover:ease-in transition-all duration-500'
       onClick={() =>
         router.push(
           `/projects/${projectRoute === 'creator-affiliate' ? 'creator-affiliate' : projectRoute}`

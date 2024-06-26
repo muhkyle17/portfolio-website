@@ -68,7 +68,7 @@ const ContactMe = () => {
 
           <button
             type='submit'
-            className='bg-primary border-2 border-primary rounded-full py-3 px-6 w-fit font-medium text-white hover:bg-transparent hover:text-primary transition-all duration-300'>
+            className='bg-primary border-2 border-primary rounded-full py-3 px-6 w-fit font-medium text-white hover:bg-transparent hover:text-primary transition-all duration-500'>
             Send Message
           </button>
           <input type='hidden' name='_captcha' value='false' />

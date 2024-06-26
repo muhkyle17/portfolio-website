@@ -21,12 +21,12 @@ const Header = ({ hidden }) => {
     <header
       className={`${
         bg ? 'bg-tertiary h-20' : 'h-24'
-      } items-center fixed top-0 w-full text-white z-10 transition-all duration-300 px-10 md:px-7 lg:px-0`}>
+      } items-center fixed top-0 w-full text-white z-10 transition-all duration-500 px-10 md:px-7 lg:px-0`}>
       <div className='container mx-auto h-full flex justify-between items-center'>
         <button
           onClick={() => router.push('/')}
           type='button'
-          className='name text-2xl hover:text-primary transition-all duration-300 w-1/4 flex justify-start'>
+          className='name text-2xl hover:text-primary transition-all duration-500 w-1/4 flex justify-start'>
           MR
         </button>
 

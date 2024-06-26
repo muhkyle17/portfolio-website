@@ -54,7 +54,7 @@ const NavMobile = () => {
         animate={isOpen ? 'visible' : ''}
         className={`${
           isOpen ? 'right-0' : '-right-full'
-        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}>
+        } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-500 overflow-hidden`}>
         <div onClick={() => setIsOpen(false)} className='cursor-pointer absolute top-8 right-8'>
           <XIcon className='w-8 h-8' />
         </div>

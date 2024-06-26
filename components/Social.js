@@ -9,7 +9,7 @@ const Social = ({ iconSize }) => {
       {social.map((item, index) => {
         return (
           <li
-            className='flex justify-center items-center text-primary hover:text-primaryDarker border-t border-transparent hover:border-primary transition-all duration-300 py-[5px]'
+            className='flex justify-center items-center text-primary hover:text-primaryDarker border-t border-transparent hover:border-primary transition-all duration-500 py-[5px]'
             key={index}>
             <a
               href={item.href}

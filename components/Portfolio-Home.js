@@ -15,7 +15,7 @@ const PortfolioHome = () => {
         <button
           type='button'
           onClick={() => router.push('/projects')}
-          className='self-center lg:self-end flex items-center gap-2 transition-all duration-300 hover:gap-3 hover:text-primary text-lg'>
+          className='self-center lg:self-end flex items-center gap-2 transition-all duration-500 hover:gap-3 hover:text-primary text-lg'>
           See more work <span className='mb-2 text-2xl'>⟶</span>
         </button>
       </div>

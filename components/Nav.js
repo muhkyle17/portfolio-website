@@ -21,7 +21,7 @@ const Nav = () => {
               <button
                 onClick={() => router.push(`/${item.href}`)}
                 className={`
-                  border-b-2 border-transparent cursor-pointer transition-all duration-300 py-[3px]
+                  border-b-2 border-transparent cursor-pointer transition-all duration-500 py-[3px]
                   hover:border-primary hover:text-primary
                   ${dynamicRouter(item)}
                   `}>
