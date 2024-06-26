@@ -64,7 +64,7 @@ export const navigation = [
   // },
   {
     name: 'Contact',
-    href: 'contact-me',
+    href: '/contact-me',
   },
 ]
 
