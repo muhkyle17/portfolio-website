@@ -33,7 +33,7 @@ const AffiliateProject = () => {
             return (
               <p
                 key={index}
-                className='bg-primary text-center flex items-center justify-center rounded-full py-[0.4rem] px-4 text-xs sm:text-sm'>
+                className='bg-transparent border-2 border-primary  text-center flex items-center justify-center rounded-full py-[0.4rem] px-4 text-xs sm:text-sm'>
                 {item}
               </p>
             )
