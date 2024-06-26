@@ -234,7 +234,7 @@ export const projects = [
     duration: 'August 2021',
     image: GithubFinder,
     description: `An app that allows you to search for github repositories that maximizes usage of the Github API. Upon searching a github user, you can view the user's profile that an in depth description of the user's github profile along with their latest repositories. You can then click a link that leads you straight to the user's actual github profile.`,
-    skills: ['Reactjs', 'API'],
+    skills: ['React.js', 'API'],
     live: 'https://github-finder-v8rdja29g-muhkyle17.vercel.app/',
     source: 'https://github.com/muhkyle17/github-finder',
   },
