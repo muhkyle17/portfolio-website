@@ -28,6 +28,12 @@ const Project = () => {
 
   return (
     <div className='container mx-auto px-4 xl:px-72 flex flex-col gap-2 sm:gap-5 items-start'>
+      <button
+        type='button'
+        onClick={() => router.push('/projects')}
+        className='self-center lg:self-start flex items-center gap-2 transition-all duration-500 hover:gap-3 hover:text-primary text-lg'>
+        <span className='text-2xl mb-2'>&#10229;</span>Back
+      </button>
       <h1 className='text-4xl sm:text-5xl text-primary'>[ {title} ]</h1>
 
       <div className='flex flex-col'>
