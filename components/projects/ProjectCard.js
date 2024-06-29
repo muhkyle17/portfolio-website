@@ -9,15 +9,12 @@ const ProjectCard = ({
   image,
   techType,
   appType,
-  skills,
-  description,
-  live,
-  source,
+  // skills,
+  // description,
+  // live,
+  // source,
 }) => {
   const router = useRouter()
-
-  console.log(projectRoute, 'projectRoute')
-  console.log(title.length, 'title.length')
 
   return (
     <motion.div
@@ -37,8 +34,8 @@ const ProjectCard = ({
         layout='intrinsic'
         className='rounded-t-2xl'
       />
+
       <div className='flex flex-col py-5 px-7 bg-transparent'>
-        {/* //TODO: Find a more sustainable way of making the font size here smaller */}
         <p className={`${title.length > 20 ? 'text-2xl' : 'text-3xl'} text-primary `}>{title}</p>
         <p className='mt-4 text-base font-semibold'>{techType}</p>
         <p className='text-base font-semibold'>{appType}</p>
