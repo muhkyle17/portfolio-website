@@ -22,7 +22,7 @@ const AffiliateProject = () => {
       <button
         type='button'
         onClick={() => router.push('/projects')}
-        className='self-center lg:self-start flex items-center gap-2 transition-all duration-500 hover:gap-3 hover:text-primary text-lg'>
+        className='self-start flex items-center gap-2 transition-all duration-500 hover:gap-3 hover:text-primary text-lg'>
         <span className='text-2xl mb-2'>&#10229;</span>Back
       </button>
       <h1 className='text-4xl sm:text-5xl text-primary'>[ {title} ]</h1>
