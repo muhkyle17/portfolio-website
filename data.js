@@ -384,10 +384,10 @@ export const experience = [
     duration: 'Jan 2023 - Present',
     location: 'Vancouver, Canada',
     responsibilities: [
-      'Full-stack engineer driving innovation in the integration and developer team, dedicated to shaping and elevating the experience within Creator.co‘s 3 platforms. ',
-      'Spearheaded the development of the internal affiliate program on all 3 platforms utilizing the Shopify and WooCommerce APIs and webhooks to ensure seamless integration and functionality.',
+      'Spearheaded the development of the affiliate programs attracting 30+ brand customers such as BestBuy, Thinkific, The Body Shop, and Moores.',
       'Contributed to the front-end services using React.js, styled components, react context, ant design and react-query.',
-      'Contributed to the back-end services for webhooks and integrations built in Node.js (Express.js) and Prisma with MySQL and PostgreSQL.',
+      'Regularly troubleshooted and resolved bugs to maintain platform efficiency and user satisfaction.',
+      'Collaborated with cross-functional teams to align design vision, ensuring a cohesive and user-friendly platform.',
     ],
   },
   {
