@@ -247,7 +247,7 @@ export const projects = [
     duration: 'February 2021',
     image: Natours,
     description:
-      'To further practice my knowledge in CSS, I used SCSS to build a simple yet elegant website that showcases an online service to book tours for the outdoor scenery. Although not an actual app, this website showcases beautiful animations and aesthetic components to showcase my CSS skills.',
+      'To enhance my CSS skills, I built a simple yet elegant website using SCSS that showcases an online service for booking outdoor tours. While not a functional app, this project features beautiful animations and aesthetic components, allowing me to deepen my understanding of CSS and design principles.',
     skills: ['HTML', 'CSS', 'SCSS'],
     live: 'https://muhkyle17.github.io/natours-project/',
     source: 'https://github.com/muhkyle17/natours-project',
