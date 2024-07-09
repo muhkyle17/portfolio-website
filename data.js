@@ -206,7 +206,7 @@ export const projects = [
     duration: 'May 2021 - Jan 2022',
     image: BrewLab,
     description:
-      'An e-commerce website for a Philippine based company that sells complete home beer brewing kits that are easy and simple for beer enthusiasts to easily brew their own beer at home. Built using CSS and Shopify, I individually coded their wide selection of their recipes and products. Showcasing them was not easy!',
+      'This project marked my entry into the freelance world. I developed an e-commerce website for a Philippine-based company specializing in home beer brewing kits. Designed with HTML, CSS, and Shopify, the site features a user-friendly interface where beer enthusiasts can easily purchase brewing kits and access a wide selection of recipes. The seamless integration of products ensures a smooth shopping experience for customers.',
     skills: ['HTML', 'CSS', 'Shopify'],
     live: 'https://muhkyle17.github.io/brewlabph/',
     source: 'https://github.com/muhkyle17/brewlabph',
@@ -220,7 +220,7 @@ export const projects = [
     duration: 'September 2021',
     image: Instox,
     description:
-      'A demo trading platform that allows users to buy and sell stocks in a matter of seconds. This app was built by me and my team using Ruby on Rails that connects to an API that tracks and monitors the U.S. stock market. Get access to live news and track your stocks to help you become the best investor you can be.',
+      'Developed with a full stack Ruby on Rails and Tailwind CSS, my team and I created an app that enables users to buy and sell stocks within a matter of seconds. Leveraging a trading API, the app allows users to track and monitor multiple stocks in the U.S. stock market. Users gain access to live news and stock tracking features, empowering them to make informed investment decisions.',
     skills: ['Ruby on Rails', 'Tailwind CSS'],
     // live: 'https://instox.herokuapp.com/',
     source: 'https://github.com/bananakiu/stock-trading-app',
