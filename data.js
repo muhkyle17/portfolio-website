@@ -192,7 +192,7 @@ export const projects = [
     appType: 'Web Application',
     duration: 'January 2022 - February 2022',
     image: Ngs,
-    description: `North Graphic, based in Davao, Philippines, specializes in creating and printing high-quality labels using state-of-the-art equipment. I developed their website from scratch using Next.js and TailwindCSS, leveraging my expertise in Next.js to implement an efficient routing system and optimize images for better performance. This project allowed me to apply my knowledge of UI/UX design to create a visually appealing and highly functional website that meets the company's specific needs.`,
+    description: `North Graphic, based in Davao, Philippines, specializes in high-quality label creation and printing using state-of-the-art equipment. I developed their website from scratch using Next.js and TailwindCSS, implementing an efficient routing system and optimizing images for enhanced performance. This project enabled me to apply my UI/UX design expertise, resulting in a visually appealing and highly functional website tailored to the company's specific needs as well as further enhancing my knowledge on React.js and Next.js.`,
     skills: ['Next.js', 'TailwindCSS'],
     live: 'https://aj-printing-website-2rz6nbwot-muhkyle17s-projects.vercel.app/',
     source: 'https://github.com/muhkyle17/aj-printing-website',
