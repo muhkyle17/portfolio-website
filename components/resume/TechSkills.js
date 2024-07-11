@@ -1,7 +1,6 @@
 import { updatedSkills } from '../../data'
 
 const TechSkills = () => {
-  console.log(updatedSkills, 'updatedSkills')
   return (
     <div className='flex flex-col gap-8 w-4/6'>
       <h1 className='text-4xl font-semibold'>Skills</h1>
