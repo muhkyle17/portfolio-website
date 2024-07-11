@@ -169,6 +169,21 @@ export const aboutSkillsTools = [
   // },
 ]
 
+export const updatedSkills = [
+  'React.js',
+  'Next.js',
+  'React Native',
+  'TypeScript',
+  'Apollo Client',
+  'GraphQL',
+  'Express.js',
+  'Node.js',
+  'MySQL',
+  'Prisma',
+  'Git',
+  'PostgreSQL',
+]
+
 // projects
 export const projects = [
   {
