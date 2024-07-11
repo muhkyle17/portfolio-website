@@ -479,9 +479,23 @@ export const resumeProjects = [
 
 export const freelance = [
   {
-    company: 'Brew Lab PH',
+    company: 'North Graphic Supplies',
     duration: 'May 2021 - Jan 2022',
+    githubLink: 'https://github.com/muhkyle17/aj-printing-website',
+    liveLink: 'https://aj-printing-website-2rz6nbwot-muhkyle17s-projects.vercel.app/',
+    shortDescription:
+      'North Graphic Supplies, based in Davao, Philippines, a company that specializes in high-quality label creation and printing using state-of-the-art equipment.',
+    detailedDescription: [
+      'Developed their website from scratch using Next.js and TailwindCSS.',
+      'Implemented an efficient routing system and optimizing images for enhanced performance.',
+      "Applied UI/UX design knowledge, resulting in a visually appealing and highly functional website tailored to the company's specific needs.",
+    ],
+  },
+  {
+    company: 'Brew Lab PH',
+    duration: 'Jan 2022 - Feb 2022',
     githubLink: 'https://github.com/muhkyle17/brewlabph/tree/main',
+    liveLink: 'https://muhkyle17.github.io/brewlabph/',
     shortDescription:
       'An e-commerce website that allows users to buy beer kits online using Shopify’s buy button feature.',
     detailedDescription: [

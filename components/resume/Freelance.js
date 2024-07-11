@@ -1,4 +1,5 @@
 import { FiGithub } from 'react-icons/fi'
+import { TbLivePhoto } from 'react-icons/tb'
 
 const Freelance = ({ freelance }) => {
   return (
@@ -19,6 +20,13 @@ const Freelance = ({ freelance }) => {
                 rel='noreferrer'
                 className='pl-3 hover:text-primary transition-all duration-500'>
                 <FiGithub />
+              </a>
+              <a
+                href={work?.liveLink}
+                target='_blank'
+                rel='noreferrer'
+                className='pl-3 hover:text-primary transition-all duration-500'>
+                <TbLivePhoto />
               </a>
             </div>
           </div>
