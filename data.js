@@ -386,8 +386,9 @@ export const experience = [
     responsibilities: [
       'Spearheaded the development of the affiliate programs attracting 30+ brand customers such as BestBuy, Thinkific, The Body Shop, and Moores.',
       'Contributed to the front-end services using React.js, styled components, react context, ant design and react-query.',
-      'Regularly troubleshooted and resolved bugs to maintain platform efficiency and user satisfaction.',
-      'Collaborated with cross-functional teams to align design vision, ensuring a cohesive and user-friendly platform.',
+      'Developed back-end services for webhooks and integrations using Node.js (Express.js) and Prisma, managing data with MySQL and PostgreSQL databases.',
+      'Diagnosed and fixed bugs to ensure platform efficiency and enhance user satisfaction.',
+      'Worked closely with cross-functional teams to align product vision to create a cohesive and user-friendly platform',
     ],
   },
   {
@@ -397,10 +398,10 @@ export const experience = [
     duration: 'Jan 2022 - Feb 2024',
     location: 'Manila, Philippines',
     responsibilities: [
-      'Migrated company’s task tracking app into a formal portal using Next.js to help managers better track tasks of employees.',
-      'Used Apollo Client to connect task tracking app to the backend to optimize Frontend features.',
-      'Updated company’s task tracker store entry page to help users log call attempts and tasks for each store they are assigned to using React.js and Apollo Client.',
-      'Implemented the interface for the company’s task management system in order for managers to create, update, display, and delete forms & tasks',
+      'Built an internal task tracking app using Next.js, enabling 80+ managers to track employee tasks.',
+      'Utilized Apollo Client to integrate task tracking apps to GraphQL backend, enhancing frontend functionality.',
+      'Implemented the interface for the company’s task management system, enabling managers to create, update, display, and delete forms and tasks.',
+      'Revamped the internal task tracker store app with React.js and Apollo Client, enabling users to log over 5,000 call attempts and tasks per assigned store',
     ],
   },
   {
