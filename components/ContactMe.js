@@ -1,4 +1,3 @@
-import { social } from '../data'
 import Social from '../components/Social'
 
 const ContactMe = () => {

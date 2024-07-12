@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer'
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const { name, email, message } = req.body
+    const { firstName, lastName, email, companyName, message } = req.body
 
     // Create a transporter object using SMTP transport
     let transporter = nodemailer.createTransport({
@@ -17,20 +17,21 @@ export default async function handler(req, res) {
     let mailOptions = {
       from: email,
       to: 'reyesmikyle17@gmail.com', // Change this to process.env.EMAIL_TO and move it to .env.local
-      subject: `Contact form submission from ${name}`,
+      subject: `Contact form submission from ${firstName}`,
       text: message,
-      html: `<p>You have a new contact form submission</p>
-             <h3>Contact Details</h3>
-             <ul>
-               <li>Name: ${name}</li>
-               <li>Email: ${email}</li>
-             </ul>
-             <h3>Message</h3>
-             <p>${message}</p>`,
+      html: `<h2>You have a new contact form submission from your personal website</h2>
+            <h3>Contact Details</h3>
+            <p><span style="font-weight: bold;">Name: </span> ${firstName} ${lastName}</p>
+            <p><span style="font-weight: bold;">Email: </span> ${email}</p>
+            <p><span style="font-weight: bold;">Company Name: </span> ${companyName}</p>
+            <h3>Message:</h3>
+            <p>${message}</p>
+          `,
     }
 
     try {
       await transporter.sendMail(mailOptions)
+      console.log('Email sent successfully')
       res.status(200).json({ message: 'Email sent successfully!' })
     } catch (error) {
       console.error('Error sending email:', error)

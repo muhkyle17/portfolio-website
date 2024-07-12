@@ -4,18 +4,17 @@ import Social from './Social'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
+    companyName: '',
     message: '',
   })
 
   const [responseMessage, setResponseMessage] = useState('')
 
   const handleChange = e => {
-    console.log(e.target.value, 'e.target.value')
     const { name, value } = e.target
-    console.log(name, 'name')
-    console.log(value, 'value')
 
     setFormData({
       ...formData,
@@ -38,7 +37,7 @@ const ContactForm = () => {
     setResponseMessage(data.message)
 
     if (res.ok) {
-      setFormData({ name: '', email: '', message: '' })
+      setFormData({ firstName: '', lastName: '', email: '', companyName: '', message: '' })
     }
   }
 
@@ -62,10 +61,12 @@ const ContactForm = () => {
       <div className='hidden lg:block h-[35rem] border-r-2 border-primary' />
 
       <div className='mb-20 w-full md:mb-0 lg:w-1/2'>
-        <form method='POST' className='flex flex-col gap-7'>
+        <form onSubmit={handleSubmit} className='flex flex-col gap-7'>
           <input
             type='text'
             name='firstName'
+            value={formData.firstName}
+            onChange={handleChange}
             placeholder='Your first name'
             className='w-full py-2 bg-transparent border-b border-primary font-normal text-xl placeholder:text-gray-300 focus:outline-none'
             required
@@ -74,6 +75,8 @@ const ContactForm = () => {
           <input
             type='text'
             name='lastName'
+            value={formData.lastName}
+            onChange={handleChange}
             placeholder='Your last name'
             className='w-full py-2 bg-transparent border-b border-primary font-normal text-xl placeholder:text-gray-300 focus:outline-none'
             required
@@ -82,14 +85,18 @@ const ContactForm = () => {
           <input
             type='email'
             name='email'
+            value={formData.email}
+            onChange={handleChange}
             placeholder='Email address'
             className='w-full py-2 bg-transparent border-b border-primary font-normal text-xl placeholder:text-gray-300 focus:outline-none'
             required
           />
           <input
             type='text'
-            name='company'
+            name='companyName'
             placeholder='Company Name'
+            value={formData.companyName}
+            onChange={handleChange}
             className='w-full py-2 bg-transparent border-b border-primary font-normal text-xl placeholder:text-gray-300 focus:outline-none'
             required
           />
@@ -97,6 +104,8 @@ const ContactForm = () => {
           <textarea
             type='text'
             name='message'
+            value={formData.message}
+            onChange={handleChange}
             rows='4'
             cols='50'
             className='w-full py-2 bg-transparent border-b border-primary font-normal text-xl placeholder:text-gray-300 focus:outline-none'
@@ -108,7 +117,6 @@ const ContactForm = () => {
             className='bg-primary border-2 border-primary rounded-full py-3 px-6 w-fit font-medium text-white hover:bg-transparent hover:text-primary transition-all duration-500'>
             Send Message
           </button>
-          <input type='hidden' name='_captcha' value='false' />
         </form>
       </div>
     </section>
