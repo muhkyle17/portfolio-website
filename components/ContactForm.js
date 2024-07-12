@@ -9,6 +9,39 @@ const ContactForm = () => {
     message: '',
   })
 
+  const [responseMessage, setResponseMessage] = useState('')
+
+  const handleChange = e => {
+    console.log(e.target.value, 'e.target.value')
+    const { name, value } = e.target
+    console.log(name, 'name')
+    console.log(value, 'value')
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    })
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+
+    const res = await fetch('api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+
+    const data = await res.json()
+    setResponseMessage(data.message)
+
+    if (res.ok) {
+      setFormData({ name: '', email: '', message: '' })
+    }
+  }
+
   return (
     <section className='container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between gap-10 lg:gap-20 w-full h-full pt-32// mt-[5rem] overflow-hidden relative py-12 lg:pt-[3.6rem]'>
       <div className='flex flex-col items-start justify-center lg:w-1/2 gap-8 lg:gap-10'>
