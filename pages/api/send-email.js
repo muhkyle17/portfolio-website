@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     // Email Options
     let mailOptions = {
       from: email,
-      to: 'reyesmikyle17@gmail.com', // Change this to process.env.EMAIL_TO and move it to .env.local
+      to: process.env.EMAIL_TO,
       subject: `Contact form submission from ${firstName}`,
       text: message,
       html: `<h2>You have a new contact form submission from your personal website</h2>
