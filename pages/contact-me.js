@@ -2,7 +2,8 @@ import Head from 'next/head'
 
 import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
-import ContactMeComponent from '../components/ContactMe'
+// import ContactMeComponent from '../components/ContactMe'
+import ContactForm from '../components/ContactForm'
 
 const ContactMe = () => {
   return (
@@ -15,7 +16,7 @@ const ContactMe = () => {
 
       <Header />
       <div>
-        <ContactMeComponent />
+        <ContactForm />
       </div>
       <div className='absolute bottom-0 w-full'>
         <Footer />
