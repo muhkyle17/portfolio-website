@@ -55,7 +55,7 @@ const ContactForm = () => {
     message: '',
   })
   const [responseMessage, setResponseMessage] = useState('')
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
 
   const handleChange = e => {
     const { name, value } = e.target
