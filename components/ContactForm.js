@@ -24,7 +24,7 @@ function Modal({ setShowModal }) {
         className='h-screen w-screen flex justify-center items-center bg-[#00000081]'
         onClick={() => setShowModal(false)}>
         <div
-          className='w-[60%] max-h-[40rem] text-center xl:text-left bg-[#232323] rounded-2xl py-16 sm:px-12 overflow-auto relative'
+          className='w-[85%] sm:w-[60%] max-h-[40rem] text-center xl:text-left bg-[#232323] rounded-2xl py-16 sm:px-12 overflow-auto relative'
           onClick={e => e.stopPropagation()}>
           <FiX
             className='absolute top-4 right-5 text-2xl cursor-pointer hover:text-primary transition-all duration-500'
@@ -32,10 +32,10 @@ function Modal({ setShowModal }) {
           />
 
           <div className='max-w-[90%] mx-auto flex justify-center flex-wrap xl:flex-nowrap h-[30rem] '>
-            <div className='flex flex-col gap-3 items-center xl:gap-6 self-center text-base'>
+            <div className='flex flex-col items-center gap-6 self-center text-base'>
               <FaRegCheckCircle className='text-primary text-9xl' />
               <h2 className='text-primaryDarker font-semibold text-4xl sm:text-5xl'>Thank you!</h2>
-              <p className='text-xl text-center'>
+              <p className='text-base sm:text-xl text-center'>
                 We&lsquo;ve received your message. Someone from our team will contact you soon.
               </p>
             </div>
@@ -55,6 +55,7 @@ const ContactForm = () => {
     message: '',
   })
   const [responseMessage, setResponseMessage] = useState('')
+  const [showModal, setShowModal] = useState(true)
 
   const handleChange = e => {
     const { name, value } = e.target
@@ -81,8 +82,15 @@ const ContactForm = () => {
 
     if (res.ok) {
       setFormData({ firstName: '', lastName: '', email: '', companyName: '', message: '' })
+      setShowModal(true)
     }
   }
+
+  setTimeout(() => {
+    if (showModal) {
+      setShowModal(false)
+    }
+  }, [5000])
 
   return (
     <section className='container mx-auto flex flex-wrap lg:flex-nowrap items-center justify-between gap-10 lg:gap-20 w-full h-full pt-32// mt-[5rem] overflow-hidden relative py-12 lg:pt-[3.6rem]'>
@@ -161,7 +169,6 @@ const ContactForm = () => {
             Send Message
           </button>
 
-          {/* <div className='hidden// opacity-0//'>{responseMessage}</div> */}
           {showModal && <Modal setShowModal={setShowModal} />}
         </form>
       </div>
