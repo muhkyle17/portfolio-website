@@ -83,7 +83,7 @@ const About = () => {
     <>
       <section id='about' className='py-12 lg:py-[3.6rem]'>
         <div className='container mx-auto flex items-start flex-wrap lg:flex-nowrap h-full gap-10'>
-          <div className='w-[60%] xl:max-w-[23rem]'>
+          <div className='w-[80%] sm:w-[60%] mx-auto md:max-w-[23rem]'>
             <Image
               src={PictureOfMe2}
               alt='Picture of me in Modal'
