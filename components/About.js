@@ -93,9 +93,8 @@ const About = () => {
           </div>
           <div className='w-full flex flex-col gap-4 md:px-12 lg:px-0 text-base'>
             <div className='flex flex-row gap-3 text-7xl font-bold'>
-              <h1 className=''>Hello, I&lsquo;m</h1>
-              <h1 className='text-primary'>
-                Mikyle<span className='text-white'>!</span>
+              <h1>
+                Hello, I&lsquo;m <span className='text-primary'>Mikyle</span>!
               </h1>
             </div>
             <hr className='border-[0.3px] border-white border-opacity-30 rounded-full' />
