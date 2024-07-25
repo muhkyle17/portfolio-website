@@ -192,7 +192,7 @@ export const projects = [
     techType: 'Full Stack Development',
     projectType: 'Developer Project',
     appType: 'Web Application',
-    duration: 'January 2022 - July 2022',
+    duration: 'January 2023 - July 2023',
     image: BrandView,
     description: `The Creator Affiliate Program is the official in-house affiliate initiative by Creator.co. Alongside the guidance of my manager Alex Quast, I spearheaded this project to enable Creator.co's brand users to develop affiliate campaigns, and allow influencers to produce campaign posts with affiliate links. These links can track clicks, sales, and revenue, providing comprehensive analytics for each affiliate. This serves as the main affiliate program of Creator.co, in addition to utilizing Awin, Rakuten, ShareASale, and Impact Radius' affiliate programs.`,
     skills: ['React.js', 'Ant Design', 'React Query', 'Express.js', 'API'],
