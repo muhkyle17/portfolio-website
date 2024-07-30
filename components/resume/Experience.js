@@ -14,13 +14,13 @@ const Experience = ({ experience }) => {
               </a>
             </Link>
           </div>
-          <a
+          {/* <a
             className='py-2 px-4 w-fit text-sm sm:text-base font-medium text-white flex items-center cursor-pointer justify-center rounded-full bg-primary hover:bg-transparent border-2 border-primary md:btn-lg duration-500 transition-all'
             target='_blank'
             rel='noreferrer'
             href='https://mikylereyes.notion.site/Resume-cb5577d7692e4fa08afc58c0d741694e?pvs=4'>
             Notion Resume
-          </a>
+          </a> */}
         </div>
       </div>
 
