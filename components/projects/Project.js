@@ -1,10 +1,36 @@
+import { useEffect, useState } from 'react'
+const axios = require('axios')
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+
 import { projects } from '../../data'
 import spinner from '../../public/spinner.gif'
 
 const Project = () => {
+  const [projectsss, setProjects] = useState([])
+  const fetchProjects = async () => {
+    try {
+      const res = await axios.get('/api/notion/projects')
+      console.log(res.data, 'res.data')
+      setProjects(res.data.projects)
+      // return res.data
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  useEffect(() => {
+    fetchProjects()
+  }, [])
+
+  console.log(projectsss, 'projectcsss')
+
   const router = useRouter()
+
+  const projectInfo2 = projectsss?.find(
+    project => project?.projectRoute?.rich_text[0]?.plain_text === router.query.id
+  )
+  console.log(projectInfo2, 'projectInfo2')
   const projectInfo = projects.find(project => project.projectRoute === router.query.id)
   const {
     title,
