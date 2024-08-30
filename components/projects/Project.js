@@ -41,23 +41,29 @@ const Project = () => {
   )
 
   const {
-    techType: techType2,
-    appType: appType2,
-    projectType: projectType2,
-    duration: duration2,
-    image: image2,
-    description: description2,
-    skills: skills2,
+    // techType: techType2,
+    // appType: appType2,
+    // projectType: projectType2,
+    // duration: duration2,
+    // image: image2,
+    // description: description2,
+    // skills: skills2,
     live: live2,
     source: source2,
   } = projectInfo2 || {}
 
-  const title2 = projectInfo2?.title?.title[0]?.plain_text || ''
-  console.log(title2, 'title2')
-
   console.log(projectInfo2, 'projectInfo2')
+  const title2 = projectInfo2?.title?.title[0]?.plain_text || ''
+  const appType2 = projectInfo2?.appType?.rich_text[0]?.plain_text || ''
+  const techType2 = projectInfo2?.techType?.rich_text[0]?.plain_text || ''
+  const projectType2 = projectInfo2?.projectType?.rich_text[0]?.plain_text || ''
+  const duration2 = projectInfo2?.duration?.rich_text[0]?.plain_text || ''
+  const image2 = projectInfo2?.image?.files[0]?.file.url || ''
+  const description2 = projectInfo2?.description?.rich_text[0]?.plain_text || ''
+  const skills2 = projectInfo2?.skills?.multi_select?.map(skill => skill.name)
+  console.log(skills2, 'skills2')
 
-  if (projectInfo === undefined)
+  if (projectInfo2 === undefined)
     return (
       <div className='flex items-center justify-center h-full'>
         <Image src={spinner} alt='Spinner' width={500} height={500} />
@@ -76,15 +82,15 @@ const Project = () => {
 
       <div className='flex flex-col'>
         <h1 className='text-2xl'>
-          {techType}, {appType}
+          {techType2}, {appType2}
         </h1>
         <div className='text-lg flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-2'>
-          <h1>{projectType}</h1>
+          <h1>{projectType2}</h1>
           <p className='text-3xl hidden sm:block'>·</p>
-          <h1>{duration}</h1>
+          <h1>{duration2}</h1>
         </div>
         <div className='mt-3 flex flex-wrap gap-3'>
-          {skills.map((item, index) => {
+          {skills2.map((item, index) => {
             return (
               <p
                 key={index}
@@ -102,7 +108,7 @@ const Project = () => {
         </div>
       </div>
 
-      <p>{description}</p>
+      <p>{description2}</p>
       <div className='flex gap-3 self-center sm:gap-5'>
         {live && (
           <a
