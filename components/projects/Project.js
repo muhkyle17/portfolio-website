@@ -8,6 +8,8 @@ import spinner from '../../public/spinner.gif'
 
 const Project = () => {
   const [projects, setProjects] = useState([])
+  const router = useRouter()
+
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -21,10 +23,6 @@ const Project = () => {
     fetchProjects()
   }, [])
 
-  const router = useRouter()
-  const projectPicture = projectsPicture.find(project => project.projectRoute === router.query.id)
-  const { image } = projectPicture || {}
-
   const projectInfo = projects?.find(
     project => project?.projectRoute?.rich_text[0]?.plain_text === router.query.id
   )
@@ -34,11 +32,13 @@ const Project = () => {
   const techType = projectInfo?.techType?.rich_text[0]?.plain_text || ''
   const projectType = projectInfo?.projectType?.rich_text[0]?.plain_text || ''
   const duration = projectInfo?.duration?.rich_text[0]?.plain_text || ''
-  const image2 = projectInfo?.image?.files[0]?.file.url || ''
   const description = projectInfo?.description?.rich_text[0]?.plain_text || ''
   const skills = projectInfo?.skills?.multi_select?.map(skill => skill.name) || []
   const live = projectInfo?.live?.rich_text[0]?.plain_text || ''
   const source = projectInfo?.source?.rich_text[0]?.plain_text || ''
+
+  const projectPicture = projectsPicture.find(project => project.projectRoute === router.query.id)
+  const { image } = projectPicture || {}
 
   if (projectInfo === undefined)
     return (
