@@ -36,6 +36,27 @@ const Project = () => {
     source,
   } = projectInfo || {}
 
+  const projectInfo2 = projects2?.find(
+    project => project?.projectRoute?.rich_text[0]?.plain_text === router.query.id
+  )
+
+  const {
+    techType: techType2,
+    appType: appType2,
+    projectType: projectType2,
+    duration: duration2,
+    image: image2,
+    description: description2,
+    skills: skills2,
+    live: live2,
+    source: source2,
+  } = projectInfo2 || {}
+
+  const title2 = projectInfo2?.title?.title[0]?.plain_text || ''
+  console.log(title2, 'title2')
+
+  console.log(projectInfo2, 'projectInfo2')
+
   if (projectInfo === undefined)
     return (
       <div className='flex items-center justify-center h-full'>
@@ -51,7 +72,7 @@ const Project = () => {
         className='self-start flex items-center gap-2 transition-all duration-500 hover:gap-3 hover:text-primary text-lg'>
         <span className='text-2xl mb-2'>&#10229;</span>Back
       </button>
-      <h1 className='text-4xl sm:text-5xl text-primary'>[ {title} ]</h1>
+      <h1 className='text-4xl sm:text-5xl text-primary'>[ {title2} ]</h1>
 
       <div className='flex flex-col'>
         <h1 className='text-2xl'>
@@ -77,7 +98,7 @@ const Project = () => {
 
       <div className='relative w-full lg:w-[75%] xl:w-full'>
         <div className='relative w-full' style={{ paddingTop: '56.25%' }}>
-          <Image src={image} alt={title} layout='fill' objectFit='cover' />
+          <Image src={image} alt={title2} layout='fill' objectFit='cover' />
         </div>
       </div>
 
