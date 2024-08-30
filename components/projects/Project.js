@@ -3,7 +3,7 @@ const axios = require('axios')
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 
-import { projects } from '../../data'
+import { projects as projectsPicture } from '../../data'
 import spinner from '../../public/spinner.gif'
 
 const Project = () => {
@@ -22,50 +22,26 @@ const Project = () => {
   }, [])
 
   const router = useRouter()
-  const projectInfo = projects.find(project => project.projectRoute === router.query.id)
-  const {
-    title,
-    techType,
-    appType,
-    projectType,
-    duration,
-    image,
-    description,
-    skills,
-    live,
-    source,
-  } = projectInfo || {}
+  const projectPicture = projectsPicture.find(project => project.projectRoute === router.query.id)
+  const { image } = projectPicture || {}
 
-  const projectInfo2 = projects2?.find(
+  const projectInfo = projects2?.find(
     project => project?.projectRoute?.rich_text[0]?.plain_text === router.query.id
   )
 
-  const {
-    // techType: techType2,
-    // appType: appType2,
-    // projectType: projectType2,
-    // duration: duration2,
-    // image: image2,
-    // description: description2,
-    // skills: skills2,
-    // live: live2,
-    // source: source2,
-  } = projectInfo2 || {}
+  const title = projectInfo?.title?.title[0]?.plain_text || ''
+  const appType = projectInfo?.appType?.rich_text[0]?.plain_text || ''
+  const techType = projectInfo?.techType?.rich_text[0]?.plain_text || ''
+  const projectType = projectInfo?.projectType?.rich_text[0]?.plain_text || ''
+  const duration = projectInfo?.duration?.rich_text[0]?.plain_text || ''
+  const image2 = projectInfo?.image?.files[0]?.file.url || ''
+  const description = projectInfo?.description?.rich_text[0]?.plain_text || ''
+  const skills = projectInfo?.skills?.multi_select?.map(skill => skill.name) || []
+  const live = projectInfo?.live?.rich_text[0]?.plain_text || ''
+  const source = projectInfo?.source?.rich_text[0]?.plain_text || ''
+  console.log(live, 'live2')
 
-  console.log(projectInfo2, 'projectInfo2') // !TEMP
-  const title2 = projectInfo2?.title?.title[0]?.plain_text || ''
-  const appType2 = projectInfo2?.appType?.rich_text[0]?.plain_text || ''
-  const techType2 = projectInfo2?.techType?.rich_text[0]?.plain_text || ''
-  const projectType2 = projectInfo2?.projectType?.rich_text[0]?.plain_text || ''
-  const duration2 = projectInfo2?.duration?.rich_text[0]?.plain_text || ''
-  const image2 = projectInfo2?.image?.files[0]?.file.url || ''
-  const description2 = projectInfo2?.description?.rich_text[0]?.plain_text || ''
-  const skills2 = projectInfo2?.skills?.multi_select?.map(skill => skill.name)
-  const live2 = projectInfo2?.live?.rich_text[0]?.plain_text || ''
-  const source2 = projectInfo2?.source?.rich_text[0]?.plain_text || ''
-  console.log(live2, 'live2')
-
-  if (projectInfo2 === undefined)
+  if (projectInfo === undefined)
     return (
       <div className='flex items-center justify-center h-full'>
         <Image src={spinner} alt='Spinner' width={500} height={500} />
@@ -80,19 +56,19 @@ const Project = () => {
         className='self-start flex items-center gap-2 transition-all duration-500 hover:gap-3 hover:text-primary text-lg'>
         <span className='text-2xl mb-2'>&#10229;</span>Back
       </button>
-      <h1 className='text-4xl sm:text-5xl text-primary'>[ {title2} ]</h1>
+      <h1 className='text-4xl sm:text-5xl text-primary'>[ {title} ]</h1>
 
       <div className='flex flex-col'>
         <h1 className='text-2xl'>
-          {techType2}, {appType2}
+          {techType}, {appType}
         </h1>
         <div className='text-lg flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-2'>
-          <h1>{projectType2}</h1>
+          <h1>{projectType}</h1>
           <p className='text-3xl hidden sm:block'>·</p>
-          <h1>{duration2}</h1>
+          <h1>{duration}</h1>
         </div>
         <div className='mt-3 flex flex-wrap gap-3'>
-          {skills2.map((item, index) => {
+          {skills.map((item, index) => {
             return (
               <p
                 key={index}
@@ -106,24 +82,24 @@ const Project = () => {
 
       <div className='relative w-full lg:w-[75%] xl:w-full'>
         <div className='relative w-full' style={{ paddingTop: '56.25%' }}>
-          <Image src={image} alt={title2} layout='fill' objectFit='cover' />
+          <Image src={image} alt={title} layout='fill' objectFit='cover' />
         </div>
       </div>
 
-      <p>{description2}</p>
+      <p>{description}</p>
       <div className='flex gap-3 self-center sm:gap-5'>
-        {live2 && (
+        {live && (
           <a
-            href={live2}
+            href={live}
             target='_blank'
             rel='noreferrer'
             className='bg-primary border-2 border-primary hover:bg-transparent hover:border-primary transition-all duration-500 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
             Live
           </a>
         )}
-        {source2 && (
+        {source && (
           <a
-            href={source2}
+            href={source}
             target='_blank'
             rel='noreferrer'
             className='bg-primary border-2 border-primary hover:bg-transparent hover:border-primary transition-all duration-500 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
