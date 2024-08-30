@@ -7,7 +7,7 @@ import { projects } from '../../data'
 import spinner from '../../public/spinner.gif'
 
 const Project = () => {
-  const [projects2, setProjects] = useState([])
+  const [projects2, setProjects] = useState([]) // !TEMP
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -48,11 +48,11 @@ const Project = () => {
     // image: image2,
     // description: description2,
     // skills: skills2,
-    live: live2,
-    source: source2,
+    // live: live2,
+    // source: source2,
   } = projectInfo2 || {}
 
-  console.log(projectInfo2, 'projectInfo2')
+  console.log(projectInfo2, 'projectInfo2') // !TEMP
   const title2 = projectInfo2?.title?.title[0]?.plain_text || ''
   const appType2 = projectInfo2?.appType?.rich_text[0]?.plain_text || ''
   const techType2 = projectInfo2?.techType?.rich_text[0]?.plain_text || ''
@@ -61,7 +61,9 @@ const Project = () => {
   const image2 = projectInfo2?.image?.files[0]?.file.url || ''
   const description2 = projectInfo2?.description?.rich_text[0]?.plain_text || ''
   const skills2 = projectInfo2?.skills?.multi_select?.map(skill => skill.name)
-  console.log(skills2, 'skills2')
+  const live2 = projectInfo2?.live?.rich_text[0]?.plain_text || ''
+  const source2 = projectInfo2?.source?.rich_text[0]?.plain_text || ''
+  console.log(live2, 'live2')
 
   if (projectInfo2 === undefined)
     return (
@@ -110,18 +112,18 @@ const Project = () => {
 
       <p>{description2}</p>
       <div className='flex gap-3 self-center sm:gap-5'>
-        {live && (
+        {live2 && (
           <a
-            href={live}
+            href={live2}
             target='_blank'
             rel='noreferrer'
             className='bg-primary border-2 border-primary hover:bg-transparent hover:border-primary transition-all duration-500 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
             Live
           </a>
         )}
-        {source && (
+        {source2 && (
           <a
-            href={source}
+            href={source2}
             target='_blank'
             rel='noreferrer'
             className='bg-primary border-2 border-primary hover:bg-transparent hover:border-primary transition-all duration-500 rounded-full py-[0.4rem] px-7 text-xs sm:text-sm'>
