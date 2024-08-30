@@ -37,6 +37,7 @@ const Project = () => {
   const live = projectInfo?.live?.rich_text[0]?.plain_text || ''
   const source = projectInfo?.source?.rich_text[0]?.plain_text || ''
 
+  // TODO: Explore lazy loading for this one possibly
   const projectPicture = projectsPicture.find(project => project.projectRoute === router.query.id)
   const { image } = projectPicture || {}
 
