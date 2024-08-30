@@ -7,7 +7,7 @@ import { projects as projectsPicture } from '../../data'
 import spinner from '../../public/spinner.gif'
 
 const Project = () => {
-  const [projects2, setProjects] = useState([]) // !TEMP
+  const [projects, setProjects] = useState([])
   useEffect(() => {
     const fetchProjects = async () => {
       try {
@@ -25,7 +25,7 @@ const Project = () => {
   const projectPicture = projectsPicture.find(project => project.projectRoute === router.query.id)
   const { image } = projectPicture || {}
 
-  const projectInfo = projects2?.find(
+  const projectInfo = projects?.find(
     project => project?.projectRoute?.rich_text[0]?.plain_text === router.query.id
   )
 
@@ -39,7 +39,6 @@ const Project = () => {
   const skills = projectInfo?.skills?.multi_select?.map(skill => skill.name) || []
   const live = projectInfo?.live?.rich_text[0]?.plain_text || ''
   const source = projectInfo?.source?.rich_text[0]?.plain_text || ''
-  console.log(live, 'live2')
 
   if (projectInfo === undefined)
     return (
