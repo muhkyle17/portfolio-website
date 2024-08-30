@@ -7,30 +7,21 @@ import { projects } from '../../data'
 import spinner from '../../public/spinner.gif'
 
 const Project = () => {
-  const [projectsss, setProjects] = useState([])
-  const fetchProjects = async () => {
-    try {
-      const res = await axios.get('/api/notion/projects')
-      console.log(res.data, 'res.data')
-      setProjects(res.data.projects)
-      // return res.data
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
+  const [projects2, setProjects] = useState([])
   useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const { data } = await axios.get('/api/notion/projects')
+        setProjects(data.projects)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+
     fetchProjects()
   }, [])
 
-  console.log(projectsss, 'projectcsss')
-
   const router = useRouter()
-
-  const projectInfo2 = projectsss?.find(
-    project => project?.projectRoute?.rich_text[0]?.plain_text === router.query.id
-  )
-  console.log(projectInfo2, 'projectInfo2')
   const projectInfo = projects.find(project => project.projectRoute === router.query.id)
   const {
     title,
