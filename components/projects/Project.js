@@ -43,7 +43,7 @@ const Project = () => {
 
   if (projectInfo === undefined)
     return (
-      <div className='flex px-4 h-[80%] w-full items-center justify-center'>
+      <div className='flex px-4 h-[70vh] w-full items-center justify-center'>
         <div className='balls flex h-full w-16 items-center justify-between'>
           <div className='ball animate-left-swing'></div>
           <div className='ball'></div>
