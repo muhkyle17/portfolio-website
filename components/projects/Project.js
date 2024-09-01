@@ -5,7 +5,6 @@ import Image from 'next/image'
 
 import { projects as projectsPicture } from '../../data'
 import Loader from '../common/Loader'
-import spinner from '../../public/spinner.gif'
 
 const Project = () => {
   const [projects, setProjects] = useState([])
@@ -37,8 +36,6 @@ const Project = () => {
   const skills = projectInfo?.skills?.multi_select?.map(skill => skill.name) || []
   const live = projectInfo?.live?.rich_text[0]?.plain_text || ''
   const source = projectInfo?.source?.rich_text[0]?.plain_text || ''
-
-  // TODO: Explore lazy loading for this one possibly
   const projectPicture = projectsPicture.find(project => project.projectRoute === router.query.id)
   const { image } = projectPicture || {}
 

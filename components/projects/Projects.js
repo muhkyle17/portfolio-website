@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // import ProjectOldDisplay from '../Project-Old-Display'
 import ProjectCard from './ProjectCard'
-import { projects, projectsShortened } from '../../data'
+import { projects } from '../../data'
 import Loader from '../common/Loader'
 
 const Projects = ({ shortened }) => {
