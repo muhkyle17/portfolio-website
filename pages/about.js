@@ -5,20 +5,23 @@ import About from '../components/About'
 
 const AboutMePage = () => {
   return (
-    <div className='relative h-full min-h-[90vh]'>
+    <>
       <Head>
         <title>Mikyle Reyes</title>
         <meta name='description' content='Mikyle Reyes' />
         <link rel='icon' href='/notion-avatar-1663964359003.svg' />
       </Head>
-      <Header />
-      <div className='mt-20'>
-        <About />
-      </div>
-      <div className='absolute bottom-0 w-full'>
+
+      <div className='flex flex-col min-h-screen'>
+        <Header />
+
+        <div className='mt-32 mb-10 flex-grow'>
+          <About />
+        </div>
+
         <Footer />
       </div>
-    </div>
+    </>
   )
 }
 

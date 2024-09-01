@@ -13,11 +13,13 @@ const CreatorAffiliate = () => {
         <link rel='icon' href='/notion-avatar-1663964359003.svg' />
       </Head>
 
-      <div className='relative'>
+      <div className='flex flex-col min-h-screen'>
         <Header />
-        <div className='mt-32 mb-10'>
+
+        <div className='mt-32 mb-10 flex-grow'>
           <AffiliateProject />
         </div>
+
         <Footer />
       </div>
     </>

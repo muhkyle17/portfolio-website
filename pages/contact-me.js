@@ -7,21 +7,23 @@ import ContactForm from '../components/ContactForm'
 
 const ContactMe = () => {
   return (
-    <div className='relative h-[91.5vh]'>
+    <>
       <Head>
         <title>Mikyle Reyes</title>
         <meta name='description' content='Mikyle Reyes' />
         <link rel='icon' href='/notion-avatar-1663964359003.svg' />
       </Head>
 
-      <Header />
-      <div>
-        <ContactForm />
-      </div>
-      <div className='absolute bottom-0 w-full'>
+      <div className='flex flex-col min-h-screen'>
+        <Header />
+
+        <div className='mt-32 mb-10 flex-grow'>
+          <ContactForm />
+        </div>
+
         <Footer />
       </div>
-    </div>
+    </>
   )
 }
 

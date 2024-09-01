@@ -17,11 +17,15 @@ export default function Home() {
         <link rel='icon' href='/notion-avatar-1663964359003.svg' />
       </Head>
 
-      <div className='relative'>
+      <div className='flex flex-col min-h-screen'>
         <Header />
-        <Hero />
-        <PortfolioHome />
-        <SkillsIcons />
+
+        <div className='flex-grow'>
+          <Hero />
+          <PortfolioHome />
+          <SkillsIcons />
+        </div>
+
         <Footer />
       </div>
     </div>
