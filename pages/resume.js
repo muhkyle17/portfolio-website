@@ -12,11 +12,15 @@ const ResumePage = () => {
         <link rel='icon' href='/notion-avatar-1663964359003.svg' />
       </Head>
 
-      <Header />
-      <div className='mt-24 mb-10'>
-        <Resume />
+      <div className='flex flex-col min-h-screen'>
+        <Header />
+
+        <div className='mt-24 mb-10 flex-grow'>
+          <Resume />
+        </div>
+
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }
