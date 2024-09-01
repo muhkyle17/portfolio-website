@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 
 import { projects as projectsPicture } from '../../data'
+import Loader from '../common/Loader'
 import spinner from '../../public/spinner.gif'
 
 const Project = () => {
@@ -44,11 +45,7 @@ const Project = () => {
   if (projectInfo === undefined)
     return (
       <div className='flex px-4 h-[70vh] w-full items-center justify-center'>
-        <div className='balls flex h-full w-16 items-center justify-between'>
-          <div className='ball animate-left-swing'></div>
-          <div className='ball'></div>
-          <div className='ball animate-right-swing'></div>
-        </div>
+        <Loader />
       </div>
     )
 
