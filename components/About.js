@@ -81,7 +81,7 @@ const About = () => {
 
   return (
     <>
-      <section id='about' className='py-12 lg:py-[3.6rem]'>
+      <section id='about' className='py-12 lg:py-[3.6rem] h-[93.5vh]'>
         <div className='container mx-auto flex items-start flex-wrap lg:flex-nowrap h-full gap-10'>
           <div className='w-[80%] sm:w-[60%] mx-auto md:max-w-[23rem]'>
             <Image

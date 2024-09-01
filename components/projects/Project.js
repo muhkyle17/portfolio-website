@@ -1,28 +1,48 @@
+import { useEffect, useState } from 'react'
+const axios = require('axios')
 import { useRouter } from 'next/router'
 import Image from 'next/image'
-import { projects } from '../../data'
-import spinner from '../../public/spinner.gif'
+
+import { projects as projectsPicture } from '../../data'
+import Loader from '../common/Loader'
 
 const Project = () => {
+  const [projects, setProjects] = useState([])
   const router = useRouter()
-  const projectInfo = projects.find(project => project.projectRoute === router.query.id)
-  const {
-    title,
-    techType,
-    appType,
-    projectType,
-    duration,
-    image,
-    description,
-    skills,
-    live,
-    source,
-  } = projectInfo || {}
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const { data } = await axios.get('/api/notion/projects')
+        setProjects(data.projects)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+
+    fetchProjects()
+  }, [])
+
+  const projectInfo = projects?.find(
+    project => project?.projectRoute?.rich_text[0]?.plain_text === router.query.id
+  )
+
+  const title = projectInfo?.title?.title[0]?.plain_text || ''
+  const appType = projectInfo?.appType?.rich_text[0]?.plain_text || ''
+  const techType = projectInfo?.techType?.rich_text[0]?.plain_text || ''
+  const projectType = projectInfo?.projectType?.rich_text[0]?.plain_text || ''
+  const duration = projectInfo?.duration?.rich_text[0]?.plain_text || ''
+  const description = projectInfo?.description?.rich_text[0]?.plain_text || ''
+  const skills = projectInfo?.skills?.multi_select?.map(skill => skill.name) || []
+  const live = projectInfo?.live?.rich_text[0]?.plain_text || ''
+  const source = projectInfo?.source?.rich_text[0]?.plain_text || ''
+  const projectPicture = projectsPicture.find(project => project.projectRoute === router.query.id)
+  const { image } = projectPicture || {}
 
   if (projectInfo === undefined)
     return (
-      <div className='flex items-center justify-center h-full'>
-        <Image src={spinner} alt='Spinner' width={500} height={500} />
+      <div className='flex px-4 h-[70vh] w-full items-center justify-center'>
+        <Loader />
       </div>
     )
 

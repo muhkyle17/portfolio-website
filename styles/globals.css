@@ -60,3 +60,40 @@ h1 {
   display: block;
   padding-top: 66.67%;
 }
+
+@layer components {
+  .balls {
+    @apply flex w-16 items-center justify-between;
+  }
+
+  .ball {
+    @apply w-3 h-3 bg-primary rounded-full;
+  }
+
+  .animate-left-swing {
+    @apply -translate-x-full;
+    animation: left-swing 0.5s ease-in alternate infinite;
+  }
+
+  .animate-right-swing {
+    @apply -translate-x-[95%];
+    animation: right-swing 0.5s ease-out alternate infinite;
+  }
+
+  @keyframes left-swing {
+    50%,
+    100% {
+      transform: translateX(95%);
+    }
+  }
+
+  @keyframes right-swing {
+    50% {
+      transform: translateX(-95%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
