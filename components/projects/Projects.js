@@ -23,21 +23,27 @@ const Projects = ({ shortened }) => {
 
   console.log(notionProjects, 'notionProjects')
 
+  const shortenedProjects = notionProjects.slice(0, 3)
+
   return (
     <div className='flex flex-wrap gap-10 justify-around lg:justify-between xl:justify-center items-baseline'>
-      {(shortened ? projectsShortened : projects).map((item, index) => {
+      {(shortened ? shortenedProjects : notionProjects)?.map((project, index) => {
+        const image = projects.filter(
+          item => item.title === project?.title?.title?.[0]?.plain_text
+        )[0]?.image?.src
+
         return (
           <ProjectCard
             key={index}
-            title={item.title}
-            projectRoute={item.projectRoute}
-            image={item.image}
-            techType={item.techType}
-            appType={item.appType}
-            description={item.description}
-            skills={item.skills}
-            live={item.live}
-            source={item.source}
+            title={project?.title?.title[0]?.plain_text || ''}
+            projectRoute={project?.projectRoute?.rich_text[0]?.plain_text || ''}
+            image={image}
+            techType={project?.techType?.rich_text[0]?.plain_text || ''}
+            appType={project?.appType?.rich_text[0]?.plain_text || ''}
+            description={project?.description?.rich_text[0]?.plain_text || ''}
+            skills={project?.skills?.multi_select?.map(skill => skill.name) || []}
+            live={project?.live?.rich_text[0]?.plain_text || ''}
+            source={project?.source?.rich_text[0]?.plain_text || ''}
           />
         )
       })}
