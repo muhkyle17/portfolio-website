@@ -17,7 +17,7 @@ const ContactMe = () => {
       <div className='flex flex-col min-h-screen'>
         <Header />
 
-        <div className='mt-32 mb-10 flex-grow'>
+        <div className='mt-10 mb-10 flex-grow'>
           <ContactForm />
         </div>
 
