@@ -4,7 +4,18 @@ import Header from '../../components/common/Header'
 import Footer from '../../components/common/Footer'
 import Portfolio from '../../components/projects/Portfolio'
 
-const projects = () => {
+export async function getServerSideProps(context) {
+  console.log(context, 'context')
+  const res = await fetch('http://localhost:3000/api/notion/projects')
+  const repo = await res.json()
+
+  console.log(repo, 'repo')
+
+  return { props: { repo } }
+}
+
+const projects = ({ repo }) => {
+  console.log(repo, 'repo')
   return (
     <>
       <Head>
