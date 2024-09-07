@@ -3,7 +3,6 @@ import Head from 'next/head'
 // Import internals
 import Header from '../components/common/Header'
 import Hero from '../components/Hero'
-import About from '../components/About'
 import SkillsIcons from '../components/SkillsIcons'
 import PortfolioHome from '../components/Portfolio-Home'
 import Footer from '../components/common/Footer'

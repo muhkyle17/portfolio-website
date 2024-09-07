@@ -1,8 +1,5 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
-
-// import ProjectOldDisplay from '../Project-Old-Display'
 import ProjectCard from './ProjectCard'
+// import ProjectOldDisplay from '../Project-Old-Display'
 import { projects } from '../../data'
 import Loader from '../common/Loader'
 
