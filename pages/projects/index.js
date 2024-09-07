@@ -4,12 +4,9 @@ import Header from '../../components/common/Header'
 import Footer from '../../components/common/Footer'
 import Portfolio from '../../components/projects/Portfolio'
 
-export async function getServerSideProps(context) {
-  console.log(context, 'context')
+export async function getServerSideProps() {
   const res = await fetch('http://localhost:3000/api/notion/projects')
   const data = await res.json()
-
-  console.log(data, 'data') // !REMOVE
 
   return { props: { data } }
 }
