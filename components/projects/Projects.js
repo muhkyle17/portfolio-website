@@ -6,25 +6,10 @@ import ProjectCard from './ProjectCard'
 import { projects } from '../../data'
 import Loader from '../common/Loader'
 
-const Projects = ({ shortened }) => {
-  const [notionProjects, setNotionProjects] = useState([])
+const Projects = ({ shortened, notionProjects }) => {
+  const shortenedProjects = notionProjects?.slice(0, 3)
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const { data } = await axios.get('/api/notion/projects')
-        setNotionProjects(data.projects)
-      } catch (error) {
-        console.error(error)
-      }
-    }
-
-    fetchProjects()
-  }, [])
-
-  const shortenedProjects = notionProjects.slice(0, 3)
-
-  if (notionProjects.length === 0) {
+  if (notionProjects?.length === 0) {
     return (
       <div className='flex px-4 h-[70vh] w-full items-center justify-center'>
         <Loader />

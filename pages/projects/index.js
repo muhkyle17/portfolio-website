@@ -7,15 +7,14 @@ import Portfolio from '../../components/projects/Portfolio'
 export async function getServerSideProps(context) {
   console.log(context, 'context')
   const res = await fetch('http://localhost:3000/api/notion/projects')
-  const repo = await res.json()
+  const data = await res.json()
 
-  console.log(repo, 'repo')
+  console.log(data, 'data') // !REMOVE
 
-  return { props: { repo } }
+  return { props: { data } }
 }
 
-const projects = ({ repo }) => {
-  console.log(repo, 'repo')
+const projects = ({ data }) => {
   return (
     <>
       <Head>
@@ -28,7 +27,7 @@ const projects = ({ repo }) => {
         <Header />
 
         <div className='mt-24 mb-10 flex-grow'>
-          <Portfolio />
+          <Portfolio notionProjects={data.projects} />
         </div>
 
         <Footer />

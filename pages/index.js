@@ -8,7 +8,14 @@ import SkillsIcons from '../components/SkillsIcons'
 import PortfolioHome from '../components/Portfolio-Home'
 import Footer from '../components/common/Footer'
 
-export default function Home() {
+export async function getServerSideProps() {
+  const res = await fetch('http://localhost:3000/api/notion/projects')
+  const data = await res.json()
+
+  return { props: { data } }
+}
+
+export default function Home({ data }) {
   return (
     <div>
       <Head>
@@ -22,7 +29,7 @@ export default function Home() {
 
         <div className='flex-grow'>
           <Hero />
-          <PortfolioHome />
+          <PortfolioHome notionProjects={data.projects} />
           <SkillsIcons />
         </div>
 
