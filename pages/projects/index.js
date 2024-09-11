@@ -5,7 +5,13 @@ import Footer from '../../components/common/Footer'
 import Portfolio from '../../components/projects/Portfolio'
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/notion/projects')
+  const res = await fetch(
+    `${
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:3000/api/notion/projects'
+        : 'https://www.mikylereyes.com/api/notion/projects'
+    } `
+  )
   const data = await res.json()
 
   return { props: { data } }
