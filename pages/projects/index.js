@@ -5,6 +5,8 @@ import Footer from '../../components/common/Footer'
 import Portfolio from '../../components/projects/Portfolio'
 
 const projects = () => {
+  console.log(process.env.NODE_ENV)
+
   return (
     <>
       <Head>
