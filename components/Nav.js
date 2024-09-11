@@ -19,7 +19,7 @@ const Nav = () => {
           return (
             <li className='text-white' key={index}>
               <button
-                onClick={() => router.push(`/${item.href}`)}
+                onClick={() => router.push(`${item.href}`)}
                 className={`
                   border-b-2 border-transparent cursor-pointer transition-all duration-500 py-[3px]
                   hover:border-primary hover:text-primary
