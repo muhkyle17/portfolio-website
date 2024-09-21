@@ -311,6 +311,7 @@ export const projects = [
     source: 'https://github.com/muhkyle17/web-developer-portfolio',
   },
   {
+    title: 'Simple Ecommerce Checkout',
     projectRoute: 'ecommerce-stripe',
     image: EcommerceStripe,
   },
