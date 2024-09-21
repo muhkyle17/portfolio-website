@@ -311,6 +311,7 @@ export const projects = [
     source: 'https://github.com/muhkyle17/web-developer-portfolio',
   },
   {
+    route: 'ecommerce-stripe',
     image: EcommerceStripe,
   },
 ]
