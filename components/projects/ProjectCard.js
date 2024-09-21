@@ -36,7 +36,7 @@ const ProjectCard = ({
       />
 
       <div className='flex flex-col py-5 px-7 bg-transparent'>
-        <p className={`${title.length > 20 ? 'text-2xl' : 'text-3xl'} text-primary `}>{title}</p>
+        <p className={`${title.length > 15 ? 'text-2xl' : 'text-3xl'} text-primary `}>{title}</p>
         <p className='mt-4 text-base font-semibold'>{techType}</p>
         <p className='text-base font-semibold'>{appType}</p>
       </div>
