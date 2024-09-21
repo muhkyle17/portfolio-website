@@ -34,7 +34,7 @@ import TicTacToe from './public/projects/tic-tac-toe.png'
 import WebDevPortfolio from './public/projects/web-dev-portfolio.png'
 import GithubFinder from './public/projects/github-finder.png'
 import Ngs from './public/projects/ngs.png'
-import EcommerceStripe from './public/projects/ecommerce-stripe'
+import EcommerceStripe from './public/projects/ecommerce-stripe.png'
 
 import BrandView from './public/projects/affiliate-brand-view.png'
 import BrandEditor from './public/projects/affiliate-brand-editor.png'
