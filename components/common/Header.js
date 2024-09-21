@@ -23,12 +23,14 @@ const Header = ({ hidden }) => {
         bg ? 'bg-tertiary h-20' : 'h-24'
       } items-center fixed top-0 w-full text-white z-10 transition-all duration-500 px-10 md:px-7 lg:px-0`}>
       <div className='container mx-auto h-full flex justify-between items-center'>
-        <button
-          onClick={() => router.push('/')}
-          type='button'
-          className='name text-2xl hover:text-primary transition-all duration-500 w-1/4 flex justify-start'>
-          MR
-        </button>
+        <div className='w-1/4'>
+          <button
+            onClick={() => router.push('/')}
+            type='button'
+            className='name text-2xl hover:text-primary transition-all duration-500 w-fit flex justify-start'>
+            MR
+          </button>
+        </div>
 
         <div className='hidden lg:block w-2/4'>
           <Nav />
