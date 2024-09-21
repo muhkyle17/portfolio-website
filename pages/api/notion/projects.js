@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Only GET  requests are allowed.' })
 
   const data = await notion.databases.query({ database_id })
-  const projects = data.results.map(result => result.properties).reverse()
+  const projects = data.results.map(result => result.properties)
 
   res.status(200).json({ projects })
 }
