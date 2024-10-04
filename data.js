@@ -35,6 +35,7 @@ import WebDevPortfolio from './public/projects/web-dev-portfolio.png'
 import GithubFinder from './public/projects/github-finder.png'
 import Ngs from './public/projects/ngs.png'
 import EcommerceStripe from './public/projects/ecommerce-stripe.png'
+import TypescriptTodo from './public/projects/typescript-todo.png'
 
 import BrandView from './public/projects/affiliate-brand-view.png'
 import BrandEditor from './public/projects/affiliate-brand-editor.png'
@@ -314,6 +315,11 @@ export const projects = [
     title: 'Ecommerce Checkout',
     projectRoute: 'ecommerce-stripe',
     image: EcommerceStripe,
+  },
+  {
+    title: 'TypeScript Todo App',
+    projectRoute: 'typescript-todo',
+    image: TypescriptTodo,
   },
 ]
 
