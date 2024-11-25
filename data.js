@@ -327,6 +327,11 @@ export const projects = [
     projectRoute: 'space-tourism',
     image: SpaceTourismHome,
   },
+  {
+    title: 'Bookify',
+    projectRoute: 'bookify',
+    image: '',
+  },
 ]
 
 export const affiliateData = [
