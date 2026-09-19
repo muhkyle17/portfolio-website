@@ -15,6 +15,7 @@ const ProjectCard = ({
   // source,
 }) => {
   const router = useRouter()
+  const isMobileApp = appType === 'Mobile Application'
 
   return (
     <motion.div
@@ -32,7 +33,9 @@ const ProjectCard = ({
         width='360'
         height='180'
         layout='intrinsic'
-        className='rounded-t-2xl'
+        objectFit={isMobileApp ? 'contain' : 'cover'}
+        objectPosition='top'
+        className='rounded-t-2xl bg-black'
       />
 
       <div className='flex flex-col py-5 px-7 bg-transparent'>
