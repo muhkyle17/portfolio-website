@@ -79,8 +79,16 @@ const Project = () => {
       </div>
 
       <div className='relative w-full lg:w-[75%] xl:w-full'>
-        <div className='relative w-full' style={{ paddingTop: '56.25%' }}>
-          <Image src={image} alt={title} layout='fill' objectFit='cover' />
+        <div
+          className={`relative w-full ${appType === 'Mobile Application' ? 'bg-black' : ''}`}
+          style={{ paddingTop: '56.25%' }}>
+          <Image
+            src={image}
+            alt={title}
+            layout='fill'
+            objectFit={appType === 'Mobile Application' ? 'contain' : 'cover'}
+            objectPosition='top'
+          />
         </div>
       </div>
 
