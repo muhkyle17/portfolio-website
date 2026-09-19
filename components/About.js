@@ -5,9 +5,8 @@ import { FiX } from 'react-icons/fi'
 import Link from 'next/link'
 
 // Import internals
-import PictureOfMe from '../public/CON_1265.jpg'
 // import PictureOfMe2 from '../public/Mikyle_pic_normal.jpeg'
-import PictureOfMe2 from '../public/about-me-hero2.jpg'
+import PictureOfMe2 from '../public/about-me-hero2.png'
 
 function Modal({ setShowModal }) {
   const closeOnEscapeKeyDown = e => {
