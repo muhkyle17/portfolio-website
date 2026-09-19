@@ -38,6 +38,10 @@ import EcommerceStripe from './public/projects/ecommerce-stripe.png'
 import TypescriptTodo from './public/projects/typescript-todo.png'
 import SpaceTourismHome from './public/projects/space-tourism-home.png'
 
+import MeetingExchange from './public/projects/meeting-exchange.png'
+import NvssTeachSpeech from './public/projects/nvss-teachspeech.png'
+import SlpDashboard from './public/projects/slp-dashboard.png'
+
 import BrandView from './public/projects/affiliate-brand-view.png'
 import BrandEditor from './public/projects/affiliate-brand-editor.png'
 import BrandCreatorView from './public/projects/affiliate-brand-creator-view.png'
@@ -332,6 +336,21 @@ export const projects = [
     projectRoute: 'bookify',
     image: '',
   },
+  {
+    title: 'Meeting Exchange',
+    projectRoute: 'meeting-exchange',
+    image: MeetingExchange,
+  },
+  {
+    title: 'NVSS TeachSpeech App',
+    projectRoute: 'nvss-teachspeech',
+    image: NvssTeachSpeech,
+  },
+  {
+    title: 'SLP/SSS Dashboard',
+    projectRoute: 'slp-dashboard',
+    image: SlpDashboard,
+  },
 ]
 
 export const affiliateData = [
@@ -417,6 +436,18 @@ export const projectsShortened = [
 
 export const experience = [
   {
+    company: 'IslandsHQ',
+    jobTitle: 'Software Engineer',
+    duration: 'Dec 2024 - Present',
+    location: 'Vancouver, Canada',
+    responsibilities: [
+      "Migrated a speech and hearing services provider's operations off a manual, Airtable-driven workflow onto a secure, multi-tenant platform (React/Vite + Supabase), scaling hearing screening and school management across 13+ First Nations schools in Saskatchewan and 6,000+ students.",
+      "Enforced Row-Level Security so each school's data — including sensitive audiometric, tympanometry, and clinical records — stays fully isolated at the database level, eliminating the cross-school exposure risk inherent to the prior spreadsheet-based system.",
+      'Automated the school reporting pipeline end-to-end — SQL functions for screening counts, Supabase Edge Functions orchestrating AWS Lambda for Word-to-PDF generation, and Node.js-built DOCX templates — replacing a manual, per-student report process and the duplicate-record errors it produced during the Airtable migration.',
+      "Designed adaptive logic that automatically sequences speech therapy goals based on each student's detected phonological patterns (e.g., backing, fronting), personalizing intervention planning across the platform rather than relying on one-size-fits-all sequencing.",
+    ],
+  },
+  {
     company: 'Creator.co',
     jobTitle: 'Software Developer',
     duration: 'Jan 2023 - Present',
@@ -458,6 +489,38 @@ export const experience = [
 ]
 
 export const resumeProjects = [
+  {
+    title: 'Elevate Festival — Meeting Exchange App',
+    date: 'Feb 2024 - Present',
+    shortDescription: 'Attendee scheduling and meeting-matching platform built for Elevate Festival.',
+    detailedDescription: [
+      'Built custom React hooks (debouncing, autosave, stale-closure-safe latest-ref patterns) to power reliable real-time editing in the attendee meeting-exchange scheduler.',
+      'Architected 20+ Supabase Edge Functions (Deno/TypeScript) to handle booking, cancellation, check-in/out, and admin-gated appointment transfers across founder, investor, and speaker workflows.',
+      'Automated transactional email delivery (React Email + Resend) and implemented admin authorization middleware with roundtable capacity limits, preventing unauthorized appointment transfers and scheduling overbooking.',
+    ],
+  },
+  {
+    title: 'NVSS TeachSpeech App',
+    date: 'Jan 2024 - Present',
+    shortDescription:
+      'Mobile speech-therapy practice app for children and parents, built for Northern Voices Speech Service.',
+    detailedDescription: [
+      'Built and shipped a React Native (Expo) mobile app giving parents and children guided speech-therapy practice to do between sessions with their speech-language pathologist, released on the App Store and Google Play.',
+      'Developed a companion NestJS + Prisma API handling child profiles, scheduling, and push notifications, with therapy content synced from Airtable so non-technical staff can update content.',
+      'Implemented offline-friendly local caching so core practice content stays available without a reliable connection, a key requirement for families in remote communities.',
+    ],
+  },
+  {
+    title: 'SLP/SSS Dashboard',
+    date: 'May 2025 - Present',
+    shortDescription:
+      'Caseload management dashboard for speech-language pathologists at Northern Voices Speech Service.',
+    detailedDescription: [
+      'Built a React, Vite, and shadcn/ui dashboard for speech-language pathologists to manage hearing screenings, student progress notes, goal sheets, and caseloads across 13+ schools.',
+      'Wrote Supabase edge functions to generate PDF student and school reports, import hearing-screening data from Airtable, and automate recurring monthly reporting.',
+      "Enforced Row-Level Security so each school's student data stays isolated at the database level.",
+    ],
+  },
   {
     title: 'Messenger App',
     date: 'Aug 2021',
